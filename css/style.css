@@ -1,0 +1,1310 @@
+/* TEXT/FONT/COPY Styles */
+h1 {
+    color: #002a44;
+    font-family: 'Oswald', sans-serif;
+    font-size: 76px;
+    font-weight: bold;
+    line-height: 84px;
+    text-transform: uppercase;
+    text-align: center; 
+    margin-left: 2rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.h1intro {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+}
+
+
+.h2intro {
+    color: #4C5064;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 68px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    color: #4C5064;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 68px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+/* dark red hex #540408 
+gray hex #4c5064*/
+h3 {
+    color: #540408;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.h3subheader {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -4%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -2%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h6 {
+    color: #c61f4b;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+.h3r {
+   text-align: center;
+}
+
+.header3 {
+    color: #540408;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+.header4 {
+    color: #c61f4b;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -4%;
+}
+
+strong {
+    /* color: #c61f4b; */
+    color: #540408;
+}
+
+.listText {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+/* How do I change the form text/font style for the Yes/No responses? */
+.formText {
+    color: #4C5064;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#h2.h2rightAlign {
+    text-align: right;
+}
+
+
+
+/* BUTTON/ASSETS STYLES */
+button {
+    border: 3px solid #c61f4b;
+    border-radius: 4px;
+    color: #c61f4b;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-style: 'Inter', "sans-serif";
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    /* Use these properties below??? */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #c61f4b;
+    color: #F1F0F4;
+    border: 3px solid #c61f4b;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-style: 'Inter', "sans-serif";
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-right: 1rem;
+    /* transition: background-color 0.5s ease-in; */
+    /* Use these properties below??? */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+
+/* NAV STYLES */
+.logo {
+    margin-left: 2rem;
+}
+
+.navigation {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topNav {
+    align-items: flex-end;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+
+.inline {
+    display: inline;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.navLinks {
+    display: inline;
+    color: #333B7E;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    vertical-align: middle; 
+    margin-top: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* PROJECT OVERVIEW section */
+/* Project Intro and About Educate Ya */
+.caseStudyIntro {
+    background-color: #F1F0F4;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem; 
+}
+
+.EducateYaAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-bottom: 3rem; 
+}
+
+.educateYaPrototype {
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.educateYaSummary {
+    width: 50%;
+    flex-grow: 1;
+    margin-left: 2rem;
+    margin-right: 3rem;
+}
+/* Project Overview */
+.h3projectOverview {
+    margin-left: 3rem;
+}
+
+.projectOverview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2rem;
+    margin-left: 3rem;
+}
+
+.theProblem {
+    width: 50%;
+    flex-grow: 1;
+    margin-right: 2rem;
+}
+
+.theSolution {
+    width: 50%;
+    flex-grow: 1;
+    margin-right: 2rem;
+}
+
+
+
+/* OUR TEAM section */
+.ourTeam {
+    background-color: #F1F0F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.teamCopy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+.listText {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+.copy {
+    width: 50%;
+    margin-right: 2rem;
+}
+
+
+/* DESIGN TOOLS and PHASES section */
+.designPhases {
+    padding-bottom: 12rem;
+}
+
+.designTools {
+    margin-bottom: 8rem; 
+} 
+
+.designToolsIcons {
+    text-align: center;
+    /* margin-right: 2rem; */
+}
+
+.h1DesignPhases {
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+
+.designPhasesIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* Do NOT add this >>> transform: scale(1.25); <<< this was the problem causing the gap on the right column */
+    /* transition: all 0.3s  ease-in-out; */
+}
+/* .phaseIcon01 {
+    transform: scale(1.25);
+} */
+
+.phaseIcon01:hover {
+    animation: spin 0.7s 1;
+}
+
+.phaseIcon02:hover {
+    animation: spin 0.7s 1;
+}
+
+.phaseIcon03:hover {
+    animation: spin 0.7s 1;
+}
+
+.phaseIcon04:hover {
+    animation: spin 0.7s 1;
+}
+
+.phaseIcon05:hover {
+    animation: spin 0.7s 1;
+}
+
+.phaseIcon06:hover {
+    animation: spin 0.7s 1;
+}
+
+
+
+@keyframes spin {
+    from {
+    transform: rotate(0deg) scale(1.25);
+    /* transform: scale(1.25); */
+    }
+    50% {
+    transform: rotate(10deg) scale(1.3);
+    /* transform: scale(1.25); */
+    }
+    75% {
+    transform: rotate(-5deg) scale(1.3);
+    }
+    to {
+    transform: rotate(0deg) scale(1.25);
+    /* transform: scale(1.25); */
+    }
+  }
+
+
+/* 
+  @keyframes bounceArrow {
+    from {
+      margin-top: 0px;
+    }
+    50% {
+      margin-top: 7px;
+    }
+    to {
+      margin-top: 0px;
+    }
+  }  */
+
+
+/* UX RESEARCH section */
+#UXresearch {
+    background-color: #F1F0F4;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.h1UXresearch {
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 1rem;
+}
+
+.UXresearchGrid {
+    display: grid;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "researchImg1 researchCopy1"
+    "researchImg2 researchCopy2"
+    "researchImg3 researchCopy2";
+    padding-bottom: 3rem;
+}
+
+.researchImg1 {
+    grid-area: researchImg1;
+}
+
+.researchImg2 {
+    grid-area: researchImg2;
+}
+
+.researchImg3 {
+    grid-area: researchImg3;
+}
+
+.researchCopy1 {
+    grid-area: researchCopy1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.researchCopy2 {
+    grid-area: researchCopy2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.redlineNumbers {
+    color: #EE0303;
+}
+.researchRow {
+    display: flex;
+    flex-direction: row;
+    width: 50% 50%;
+    flex-grow: 1;
+    margin-right: 2rem;
+    margin-left: 3rem;
+}
+
+.protoPersona {
+    margin-right: 2rem;
+}
+
+.researchPlan {
+    margin-right: 2rem;
+}
+
+.protoPersonaImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 3rem;
+    transform: scale(0.88);
+}
+
+.userInterviews {
+    margin-right: 2rem;
+}
+
+/* This insights list font size is same as h5  */
+.insightsList {
+    /* color: #4C5064; */
+    list-style-type: symbols(•);
+    /* font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px; */
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+    letter-spacing: -2%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+
+.h5strong {
+    color: #540408;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -2%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+
+/* DEFINITION section */
+#definition {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.h1Definition {
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 1rem;
+}
+
+.definitionRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.definitionCopy {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 2rem;
+}
+
+.h5Definition {
+    text-align: right;
+}
+
+.lightbulbImg {
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+
+
+/* IDEATION section */
+#ideation {
+    background-color: #F1F0F4;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.h1Ideation {
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 1rem;
+}
+
+.ideationGrid {
+    display: grid;
+    /* margin-left: 2rem; */
+    margin-right: 2rem;  
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "EYstoryboard1 ideationCopy1"
+    "EYstoryboard2 ideationCopy2"
+    "EYstoryboard3 EYstoryboard4"
+    ;
+}
+
+.EYstoryboard1 {
+    grid-area: EYstoryboard1;
+}
+
+.EYstoryboard2 {
+    grid-area: EYstoryboard2;
+}
+
+.EYstoryboard3 {
+    grid-area: EYstoryboard3;
+}
+
+.EYstoryboard4 {
+    grid-area: EYstoryboard4;
+    animation: spin2 5s;
+    animation-iteration-count: 25;
+}
+
+.ideationCopy1 {
+    grid-area: ideationCopy1;
+    /* padding-left: 2rem;  */
+}
+
+.ideationCopy2 {
+    grid-area: ideationCopy2;
+    /* padding-left: 2rem;  */
+}
+
+.ideationList {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* Need to constrain this img size too  */
+.EYstoryboard5 {
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes spin2 {
+    from {
+    transform: rotate(0deg);
+    }
+    50% {
+    transform: rotate(360deg);
+    }
+    75% {
+    transform: rotate(-5deg);
+    }
+    to {
+    transform: rotate(0deg);
+    }
+  }
+
+
+
+
+/* PROTOTYPING section */
+.h1Prototyping {
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 1rem;
+}
+
+#prototyping {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8rem;
+}
+
+.prototypeFlexbox {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sketchesCopy {
+    margin-right: 2rem;
+}
+
+.earlyPrototyping {
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#EYpaperSketches {
+    margin-bottom: 2rem;
+}
+
+#EYwireframes {
+    /* Scale these images smaller or place in div side by side? Image quality too low for it to be this large  */
+}
+
+/* .userFlowImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+
+
+
+/* USABILITY TESTING section */
+#usabilityTesting {
+    background-color: #F1F0F4;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.h1UsabilityTesting {
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 1rem;
+}
+
+.usabilityTestingGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "usabilityTestingCopy usabilityTestingCopy "
+    "usabilityTestingMobile usabilityTestingDesktop"
+    ;
+}
+
+.usabilityTestingCopy {
+    grid-area: usabilityTestingCopy;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* Still trying to get these images to stay within the webpage but remain side by side  */
+.usabilityTestingMobile {
+    grid-area: usabilityTestingMobile;
+    border: 2px solid red;
+    margin-left: 0;
+}
+
+.usabilityTestingDesktop {
+    grid-area: usabilityTestingDesktop;
+    border: 2px solid red;
+}
+
+.usabilityImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 2px solid red;
+    margin-left: 0px;
+}
+
+
+
+
+/* FINAL PROTOTYPE section */
+.h1FinalPrototype {
+    padding-top: 2rem;
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 1rem;
+}
+
+.finalPrototypeGrid {
+    display: grid;
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 720px 280px;
+    grid-template-areas: 
+    "desktopMockup desktopMockup"
+    "prototypeButtons mobileMockup"
+    ;
+}
+
+/* Trying to get my images to overlap but not over text  */
+.desktopMockup {
+    position: relative;
+    z-index: -1;
+    transform: scale(0.75);
+}
+
+.mobileMockup {
+    position: absolute;
+    right: 0px;
+    margin-right: 2%;
+    margin-top: 2rem;
+    transform: scale(0.75);
+}
+
+.prototypeButtons {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 20%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 160px;
+}
+
+
+
+/* CONCLUSION section */
+.h1Conclusion {
+    background-color: #F1F0F4;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-left: 0;
+}
+
+.conclusion {
+    background-color: #F1F0F4;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.h1ThankYou {
+    text-align: right;
+    /* margin-right: 2rem;  */
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 3rem;
+}
+
+.h4ThankYou {
+    color: #c61f4b;
+    text-align: right;
+    /* margin-right: 2rem; */
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+
+/* FOOTER Styles */
+.footer {
+    background-color: #6667AB;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+    grid-template-rows: 1.75fr 0.25fr;
+    grid-template-areas: 
+        "footerh1 connectIcons footerResume"
+        "#footerText #footerText #footerText"
+        ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* .footerh1 {
+    grid-area: footerh1;
+} */
+
+.connectIcons {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    /* grid-area: connectIcons; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footerResume {
+    /* grid-area: footerResume; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footerh1 {
+    color: #F1F0F4;
+    text-align: left;
+    /* line-height: 16px; */
+    padding-left: 2rem;
+}
+
+.footerh6 {
+    color: #F1F0F4;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
+}
+
+#footerText {
+    color: #F1F0F4;
+    font-family: 'Inter', "sans-serif";
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+/* Why can't I get this p id div to center across the entire width?  */
+    margin-left: 4rem;
+}
+
+.emailWithIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.emailText {
+    color: #F1F0F4;
+    padding-left: 2rem;
+}
+
+.LinkedInWithIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.LinkedInText {
+    color: #F1F0F4;
+    padding-left: 2rem;
+}
+
+#buttonResume {
+    margin-left: 3.75rem;
+}
+
+.footer button {
+    border: 3px solid #ECE5BA;
+    border-radius: 4px;
+    color: #ECE5BA;
+    box-sizing: border-box;
+    background-color: #6667AB;
+    margin-top: 1rem;
+}
+
+.footer button:hover {
+    background: #F1F0F4;
+    color: #6667AB;
+    border-color: #F1F0F4;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
+
+
+
+
+
+
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+@media only screen and (max-width: 600px) {
+
+    .logo {
+        margin-left: 0.5rem;
+    }
+/* Should actually create a menu icon that leads to mobile menu instead  */
+    .topNav {
+        margin-right: 0.5rem;
+    }
+
+    h1 {
+        margin-left: 0.5rem;
+    }
+
+
+
+    /* PROJECT OVERVIEW section  */
+    .EducateYaAbout {
+        display: flex;
+        flex-direction: column;
+        margin-top: -15%;
+    }
+
+    .educateYaPrototype {
+        transform: scale(0.75);
+        margin-left: -14%;
+    }
+
+    .educateYaSummary {
+        margin-left: 0px;
+        width: 100%;
+        margin-top: -10%;
+    }
+
+    .projectOverview {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .theProblem {
+        width: 100%;
+    }
+
+    .theSolution {
+        width: 100%;
+    }
+
+
+    /* OUR TEAM section  */
+    .teamCopy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teamCopy .copy {
+        width: 100%;
+    }
+
+    /* DESIGN PHASES ICONS section  */
+    .designPhasesIcons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "phaseIcon01 phaseIcon02"
+            "phaseIcon03 phaseIcon04"
+            "phaseIcon05 phaseIcon06"
+            ;
+        margin-top: 3rem;
+    }
+
+    .phaseIcon01 {
+        grid-area: phaseIcon01;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+
+    .phaseIcon02 {
+        grid-area: phaseIcon02;
+        margin-left: 1rem;
+    }
+
+    .phaseIcon03 {
+        grid-area: phaseIcon03;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+
+    .phaseIcon04 {
+        grid-area: phaseIcon04;
+        margin-left: 1rem;
+    }
+
+    .phaseIcon05 {
+        grid-area: phaseIcon05;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+
+    .phaseIcon06 {
+        grid-area: phaseIcon06;
+        margin-left: 1rem;
+    }
+
+
+    /* UX RESEARCH section  */
+    #UXresearch {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .UXresearchGrid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .researchCopy1 {
+        order: 1;
+    }
+
+    .researchImg1 {
+        order: 2;
+        transform: scale(.75);
+    }
+
+    .researchImg2 {
+        order: 3;
+        transform: scale(.75);
+    }
+
+    .researchImg3 {
+        order: 4;
+        transform: scale(.75);
+    }
+
+    .researchCopy2 {
+        order: 5;
+    }
+
+    .researchRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .protoPersonaImg {
+        transform: scale(0.40);
+    }
+
+
+    /* DEFINITION section  */
+    #definition {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .definitionRow {
+        flex-direction: column;
+    }
+
+    .lightbulbImg {
+        margin-left: 0px;
+        margin-top: 2rem;
+    }
+
+
+    /* IDEATION section  */
+
+    #ideation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ideationGrid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ideationCopy1 {
+        order: 1;
+    }
+
+    .EYstoryboard1 {
+        order: 2;
+        transform: scale(0.80);
+    }
+
+    .EYstoryboard2 {
+        order: 3;
+        transform: scale(0.80);
+    }
+
+    .EYstoryboard3 {
+        order: 4;
+        transform: scale(0.80);
+    }
+
+    .EYstoryboard4 {
+        order: 5;
+        grid-area: EYstoryboard4;
+        animation: spin2 5s;
+        animation-iteration-count: 25;
+        transform: scale(0.80);
+    }
+
+    #h1ideation {
+        order: 6;
+    }
+
+    .EYstoryboard5 {
+        order: 7;
+        /* transform: scale(.40); */
+    }
+/* Not sure why this is out of sequence. According to this order, it should be last.  */
+    .ideationCopy2 {
+        order: 8;
+    }
+
+    @keyframes spin2 {
+        from {
+        transform: rotate(0deg) scale(.80);
+        }
+        50% {
+        transform: rotate(360deg) scale(.80);
+        }
+        75% {
+        transform: rotate(-5deg) scale(.80);
+        }
+        to {
+        transform: rotate(0deg) scale(.80);
+        }
+      }
+
+
+
+    /* PROTOTYPING section  */
+    #prototyping {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .earlyPrototyping {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .UIstyleGuide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .UIstyleGuide {
+        transform: scale(.95);
+    }
+
+
+
+    /* USABILITY TESTING section  */
+    .usabilityTestingGrid {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .usabilityImg {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* FINAL PROTOTYPE section  */
+    .finalPrototypeGrid {
+        display: grid;
+        position: relative;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 560px 220px;
+        grid-template-areas: 
+        "desktopMockup desktopMockup"
+        "prototypeButtons mobileMockup"
+        ;
+    }
+    
+    .desktopMockup {
+        position: relative;
+        z-index: -1;
+        transform: scale(.40);
+        margin-left: -30%;
+        margin-top: -10%;
+    }
+
+    .mobileMockup {
+        position: relative;
+        right: 0px;
+        margin-left: -235%;
+        /* margin-top: 2rem; */
+        transform: scale(.40);
+        margin-top: -20%;
+    }
+
+    .prototypeButtons {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding-left: 1%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 120px;
+        padding-right: 10px;
+        width: 75%;
+    }
+
+    /* FOOTER */
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerh1 {
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .connectIcons {
+        text-align: center;
+    }
+
+    .footerResume {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .footer button {
+        text-align: center;
+    }
+
+    #footerText {
+        text-align: center;
+    }
+}
