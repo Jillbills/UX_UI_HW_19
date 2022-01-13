@@ -23,12 +23,12 @@
 
 
 <!--Add anchor tags to topnav - defer until we learn more on JavaScript?-->
+
+
 <body>
-<!-- Header with topNav bar -->
-    <header class="navigation">
-        <div class="logo">
-            <img src="images/LogoJVanRound.svg" alt="Jill Van's logo" width="150px" height="75px">
-        </div>
+<!-- Header with topNav -->
+    <!-- <header class="header" id="myHeader">
+        <img class="logo" src="images/LogoJVanRound.svg" alt="Jill Van's logo" width="150px" height="75px">
         <div class="topNav">
             <nav class="inline">
                 <ul>
@@ -39,7 +39,7 @@
                 <br>
             </nav>
         </div>
-    </header>
+    </header> -->
 
 <!--HERO Section-->
     <section class="heroContent">
@@ -70,6 +70,25 @@
     </section>
 
 
+
+<!-- Header with topNav -->
+<header class="header" id="myHeader">
+    <img class="logo" src="images/LogoJVanRound.svg" alt="Jill Van's logo" width="150px" height="75px">
+    <div class="topNav">
+        <nav class="inline">
+            <ul>
+                <a href="#about"><li class="navLinks">About</li></a>
+                <a href="#work"><li class="navLinks">Work</li></a>
+                <a href="#connect"><li class="navLinks">Connect</li></a>
+            </ul>
+            <br>
+        </nav>
+    </div>
+</header>
+
+
+
+<div class="content">
 <!--ABOUT Section-->
     <section id="about">
         <div class="aboutIntro">
@@ -321,6 +340,25 @@
     </section>
     </footer>
 
-</body>
+</div> <!-- This closes my "content" class div which contains About to Connect sections and footer -->
 
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+</script>
+
+
+</body>
 </html>

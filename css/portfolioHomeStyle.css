@@ -173,12 +173,18 @@ button:hover {
 }
 
 
-/* NAV STYLES */
+
+
+
+
+
+/* HEADER AND NAV styles */
 .logo {
     margin-left: 2rem;
 }
 
-.navigation {
+.header {
+    background-color: white;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -215,6 +221,17 @@ button:hover {
 a {
     text-decoration: none;
 }
+
+/* My sticky header styling */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
 
 
 
@@ -337,6 +354,7 @@ This grid code isn't quite working - not sure why or how to get images to align 
 
 /* ABOUT Section */
 #about {
+    background-color: #F1F0F4;
     padding-top: 0.5rem;
     margin-inline-end: 0;
     margin-block-start: 0;
@@ -444,7 +462,7 @@ This grid code isn't quite working - not sure why or how to get images to align 
 }
 
 .designTools {
-    margin-bottom: 8rem; 
+    padding-bottom: 8rem; 
 }
 
 .designToolsIcons {
@@ -455,7 +473,7 @@ This grid code isn't quite working - not sure why or how to get images to align 
 
 /* WORK Section */
 #work {
-    background-color: #F1F0F4;
+    /* background-color: #F1F0F4; */
     padding-top: 0.5rem;
     padding-bottom: 8rem;
 }
@@ -524,6 +542,7 @@ This grid code isn't quite working - not sure why or how to get images to align 
 
 /* CONNECT Section */
 #connect{
+    background-color: #F1F0F4;
     padding-top: 0.5rem;
     padding-bottom: 8rem;
 }
@@ -655,6 +674,11 @@ form {
 
 
 
+
+
+
+
+
 /* Media Queries Media Queries Media Queries Media Queries Media Queries */
 /* Media Queries Media Queries Media Queries Media Queries Media Queries */
 /* Media Queries Media Queries Media Queries Media Queries Media Queries */
@@ -662,3 +686,7 @@ form {
 
     /* Need to do media queries for homepage mobile view */
 }
+
+
+
+
