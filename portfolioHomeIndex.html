@@ -99,13 +99,21 @@
             <div class="ventureContainer">
                 <div class="solImagery">
                     <img id="SOLdecalImg" src="images/SOLdecals.png" alt="Stick Out Loud decals" width="640px" height="226px">
-                    <button type="button" onclick="location.href='http://stickoutloud.com/'">Explore</button>
+                    <button id="SOLbutton" type="button" onclick="location.href='http://stickoutloud.com/'">Explore</button>
                 </div>
                 <div class="solCopy">
                     <img src="images/SOLonEtsy.png" alt="Stick Out Loud Custom vinyl decals on Etsy" width="397px" height="92px"><br>
                     <p>Our mission is to provide a means for others to express themselves, evoke conversation, and inspire positivity in our community as our decals help unite people with common interests. We love adventure and how exploring the PNW helps us achieve mental clarity. Together let's turn Sorry Outta Luck into Stick Out Loud (SOL) and feed it a positive soul!</p>
                 </div>
             </div>
+        <!-- The modal content is #modalSOL -->
+            <!-- <div id="modalSOL" class="modal">
+                <span class="close">&times;</span>
+                <h3 class="h3modal">Warning:</h3>
+                <p class="pModal">You're about to encounter
+                    <br>some fabulous decals offsite. 
+                    <br>Hope to see you again soon!</p>
+            </div> -->
         </div>
             
 <!--Testing out bootstrap grid v1 - need to figure out alignment/spacing of family photo on top row--> 
@@ -158,7 +166,8 @@
 
         <div class="designSkills">
             <h2>Design Skills</h2>
-            <img id="UXidImg" src="images/UXdesignSkillsWordCloud.png" alt="UX design skills word cloud" width="1024px" height="457px">
+            <!-- original width="1024px" height="457px" -->
+            <img id="UXidImg" src="images/UXdesignSkillsWordCloud.png" alt="UX design skills word cloud"> 
         </div>
 
         <div class="designTools">
@@ -203,13 +212,15 @@
                 <button type="button">View Project</button>
             </div>
             <div class="edCoverImage">
+                <!-- had set width and height - original size width="595px" height="350px"  -->
                 <img src="images/caseStudy/Edgov/EdgovCoverSlide.jpg" alt="U.S. Dept of Education showcase redesign image" width="595px" height="350px">
             </div>
         </div>
         <hr>
         <div class="Meerkat">
-            <div class="MeerkatCoverImage">
-            <img src="images/caseStudy/Meerkat/MeerkatCoverSlide.jpg" alt="Meerkat showcase travel mobile app image" width="595px" height="350px">
+            <div>
+            <!-- had set width and height - original size width="595px" height="350px"  -->
+            <img class="MeerkatCoverImage" src="images/caseStudy/Meerkat/MeerkatCoverSlide.jpg" alt="Meerkat showcase travel mobile app image" width="595px" height="350px">
             </div>
             <div class="MeerkatSummary">
                 <h3>Meerkat</h3>
@@ -256,13 +267,14 @@
 
 
         <!-- The modal content is #modalConnect -->
-        <div id="modalConnect" class="modal">
+        <!-- <div id="modalConnect" class="modal">
             <span class="close">&times;</span>
             <h3 class="h3modal">Thank You!</h3>
             <p class="pModal">I'll be in touch with you soon.</p>
-        </div>
+        </div> -->
 
     </section>
+
 
 
 <!--Footer-->

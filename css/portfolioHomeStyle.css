@@ -117,7 +117,7 @@ strong {
 
 #footerText {
     color: #F1F0F4;
-    font-family: 'Inter'; sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: normal;
     line-height: 16px;
@@ -138,7 +138,7 @@ button {
     color: #6667AB;
     box-sizing: border-box;
     background-color: transparent;
-    font-style: 'Inter'; sans-serif;
+    font-style: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -159,7 +159,7 @@ button:hover {
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
-    font-style: 'Inter'; sans-serif;
+    font-style: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -338,11 +338,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .solImagery {
     width: 50%;
-    flex-grow: 1;
+    flex: 1;
     margin-left: 2rem;
 }
 
@@ -353,10 +354,86 @@ a {
 
 .solCopy {
     width: 30%;
-    flex-grow: 1;
+    flex: 1;
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
+
+
+/* #modalSOL is warning user will be taken offsite to our Etsy page.
+Color for modal BG is #F27224  */
+
+/* The modal background */
+.modal {
+    display: none;  /* hidden by default */
+    position: fixed;
+    z-index: 1;
+    padding-top: 8rem;  /* modal location */
+    /* How do I make this modal center responsively to any screen size?  */
+    width: 100%; 
+    height: 25%; 
+    left: 8%;
+    right: 8%; 
+    top: 25%;
+    transform: (-50%, -50%);
+    overflow: auto;     /* enables scroll if needed */
+    background-color: rgb(0, 0, 0);  /* fallback color */
+    background-color: rgba(0, 0, 0, 0.4);  /* black BG with opacity */
+    /* vertical-align: bottom; */
+    text-align: center;
+}
+
+/* The modal content dialog */
+#modalSOL {
+    display: block;
+    background-color: #F27224;
+    border-radius: 16px;
+    margin: auto;
+    padding: 4rem;
+    width: 75%;
+    align-items: center; 
+    vertical-align: middle;
+}
+
+.h3modal {
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+}
+
+.pModal {
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -2%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+}
+
+/* The Close button is an X coded as &times; */
+#modalSOL .close {
+    color: rgb(147, 5, 5);
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#modalSOL .close:hover,
+.close:focus {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+
 
 
 
@@ -384,7 +461,6 @@ a {
 } 
 
 .col01List {
-    border: 2px solid red;
     margin-left: 0;
 }
 
@@ -493,6 +569,13 @@ a {
 
 .designSkills {
     padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#UXidImg {
+    flex-shrink: 1;
 }
 
 .designTools {
@@ -501,7 +584,6 @@ a {
 
 .designToolsIcons {
     margin-right: 2rem;
- 
 }
 
 
@@ -564,6 +646,7 @@ a {
 
 .MeerkatCoverImage {
     margin-left: 3rem;
+    flex-basis: 595px;
 }
 
 .MeerkatSummary {
@@ -626,11 +709,12 @@ form {
 
 /* The modal content dialog */
 #modalConnect {
+    display: block;
     background-color: #392F80;
+    border-radius: 16px;
     margin: auto;
     padding: 4rem;
     width: 75%;
-    display: flex;
     align-items: center; 
     vertical-align: middle;
 }
@@ -724,7 +808,7 @@ form {
 
 #footerText {
     color: #F1F0F4;
-    font-family: 'Inter'; sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: normal;
     line-height: 16px;
@@ -794,10 +878,19 @@ form {
 @media only screen and (max-width: 600px) {
 
     /* Need to do media queries for homepage mobile view */
-
+    h1 {
+        line-height: 108px;
+    }
 
     /* HERO section */
-
+    .heroContent {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .heroImg {
+        flex-shrink: 1;
+    }
 
 
     /* HEADER AND NAV styles */
@@ -809,6 +902,12 @@ form {
         margin-right: 0.5rem;
     }
 
+    /* To make nav list items stack in a column instead */
+    /* ul {
+        display: flex;
+        flex-direction: column;
+    } */
+
     h1 {
         margin-left: 0.5rem;
     }
@@ -818,13 +917,15 @@ form {
     .aboutContainer {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .profilePic {
         padding-left: 1rem;
         padding-right: 1rem;
     /* How to center image?  */
+        justify-content: center;
+        flex-grow: 1;
     }
 
 
@@ -838,19 +939,26 @@ form {
     }
     
     .solImagery {
-        flex-grow: 1;
-    }
-    /* How to I get rid of the left margin or padding?  */
-    #SOLdecalImg {
-        transform: scale(.75);
         border: 2px solid red;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+/* How to I get rid of the left margin or padding? 
+How do I shrink this img? flex-shrink doesn't appear to be working */
+    #SOLdecalImg {
+        border: 2px solid red;
+
     }
 
     .solImagery button {
         cursor: pointer;
-/* want to center this button it's div  */
-        margin-top: 0px;
+        margin-top: 1rem;
         margin-bottom: 2rem;
+        width: 50%;
+/* want to center this button it's div  */
+
     }
     
     .solCopy {
@@ -862,100 +970,52 @@ form {
 
 
     /* ABOUT Playground */
+    /* Change grid layout to flexbox layout columns */
     .myPlayground {
         padding-bottom: 4rem;
     }
-/*     
-    .col01List {
-        border: 2px solid red;
-        margin-left: 0;
-    } */
-    
-    /* bullets or no bullets hmmm... code for no bullets */
-    /* .hobbiesList li {
-        list-style-type: none;
-    } */
-/*     
-    .hobbiesList {
-        font-family: 'Raleway', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 600;
-        line-height: 1.25rem;
-        letter-spacing: -2%; */
-        /* padding: 1rem; */
-        /* margin: 0 auto; 
-    } */
-    
 
-    
-    /* v1 grid coding - grid-template-columns: 33.33% 41.67% 25%; */
-    /* .row1 {
-        display: grid;
-        grid-template-columns: 4fr 5fr 3fr;
+    #playgroundGrid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
-    
+
+    .row1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;        
+        justify-content: center;
+    }
+
     .row2 {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+/* Why are they not centering?  */
+        justify-content: center;
     }
+
     .col25 {
-        justify-content: space-evenly;
-    }  */
-
-    
-
-
-    /* v3 grid code - see if this works  */
-    /* #playgroundGrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-            "hobbiesList hobbiesList"
-            "col02topRow col02topRow"
-            "col03topRow col03topRow"
-            "IlleniumMain lanternFestivalNight"
-            "KauaiBeach ladyPainting"
-            ;
+        border: 2px solid red;
     }
-
-    .hobbiesList {
-        grid-area: hobbiesList;
-    }
-
-    .col02topRow {
-        grid-area: col02topRow;
-    }
-
-    .col03topRow {
-        grid-area: col03topRow;
-    }
-
-    #IlleniumMain {
-        grid-area: IlleniumMain;
-    }
-
-    #lanternFestivalNight {
-        grid-area: lanternFestivalNight;
-    }
-
-    #KauaiBeach {
-        grid-area: KauaiBeach;
-    }
-
-    #ladyPainting {
-        grid-area: ladyPainting;
-    } */
 
 
 
 
     /* ABOUT Design Skills */
+    .designSkills {
+        display: flex;
+        flex-direction: column;
+    }
+
     #UXidImg {
         border: 2px solid red;
         padding-left: 0px;
         margin-left: 0.5rem;
-/* Need to make this img smaller and left aligned  */
+
+/* Need to make this img scale properly and left aligned  */
+
     }
 
 
@@ -970,17 +1030,19 @@ form {
     }
 
 
+
     /* WORK section */
     .EducateYa {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         margin-left: 0px;
         border: 2px solid red;
     }
 
     .educateYaPrototype {
+        /* Make this image smaller and left aligned  */
         margin-left: 0px;
-/* Make this image smaller and left aligned  */
         transform: scale(0.75);
         border: 2px solid red;
     }
@@ -988,20 +1050,23 @@ form {
     .educateYaSummary {
         width: 88%;
         border: 2px solid red;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        /* margin-left: 0.5rem; */
 /* How to center this?  */
+        margin-right: 0.5rem;
+        justify-self: center;
+
     }
 
     .DeptEd {
         display: flex;
         flex-direction: column;
+        justify-self: center;
         border: 2px solid red;
-        margin-right: 0.5rem;
     }
 
     .USdeptOfEducationSummary {
         width: 88%;
+        padding-bottom: 2rem;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
@@ -1009,7 +1074,9 @@ form {
     .edCoverImage {
         padding-top: 1rem;
         border: 2px solid red;
-/* Control this rogue img file  */
+/* Control this rogue img file. Why isn't flex-shrink working? */
+        display: flex;        
+        flex-shrink: 1;
     }
 
     .Meerkat {
@@ -1024,7 +1091,8 @@ form {
         padding-left: 0px;
         margin-left: 0.5rem;
 /* Need to scale or shrink this image  */
-        border: 2px solid red;
+        border: 2px solid red;      
+        flex-shrink: 4;
     }
 
     .MeerkatSummary {
