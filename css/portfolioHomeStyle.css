@@ -248,83 +248,6 @@ a {
 
 
 
-.hobbiesList {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 1.75rem;
-    letter-spacing: -2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 1.25rem;
-    margin: 0 auto;
-}
-
-/* v1 grid coding */
-/* grid-template-columns: 33.33% 41.67% 25%; */
-.row1 {
-    display: grid;
-    grid-template-columns: 4fr 5fr 3fr;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-.row2 {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-.col25 {
-    justify-content: space-evenly;
-} 
-/* Row 2 columns each occupy 25% of the area  */
-
-
-
-/* Testing grid code v2 - How do I get family photo to right align along grid?
-This grid code isn't quite working - not sure why or how to get images to align along the 12 column grid */
-/* 
-.myPlaygroundGrid {
-    display: grid;
-    grid-template-columns: 4fr 5fr 3fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "hobbiesList familyPhoto playgroundThomas"
-        "IlleniumMain lanternFestivalNight KauaiBeach ladyPainting"
-        ;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-.hobbiesList {
-    grid-area: hobbiesList;
-}
-
-.familyPhoto {
-    grid-area: familyPhoto;
-}
-
-.playgroundThomas {
-    grid-area: playgroundThomas;
-}
-
-.IlleniumMain {
-    grid-area: IlleniumMain;
-}
-
-.lanternFestivalNight {
-    grid-area: lanternFestivalNight;
-}
-
-.KauaiBeach {
-    grid-area: KauaiBeach;
-}
-
-.ladyPainting {
-    grid-area: ladyPainting;
-} */
 
 
 
@@ -377,6 +300,10 @@ This grid code isn't quite working - not sure why or how to get images to align 
     padding: 3rem;
 }
 
+.aboutCopy button {
+    margin-top: 1rem;
+}
+
 .about h2 {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -410,28 +337,52 @@ This grid code isn't quite working - not sure why or how to get images to align 
     margin-right: 2rem;
 }
 
+
+
 .myPlayground {
     padding-bottom: 4rem;
 }
+
+/* v1 grid coding */
+/* grid-template-columns: 33.33% 41.67% 25%; */
+.row1 {
+    display: grid;
+    grid-template-columns: 4fr 5fr 3fr;
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+}
+.col25 {
+    justify-content: space-evenly;
+} 
 
 .col01List {
     border: 2px solid red;
     margin-left: 0;
 }
 
+
 /* bullets or no bullets hmmm... code for no bullets */
 /* .hobbiesList li {
     list-style-type: none;
 } */
-
 .hobbiesList {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.25rem;
     letter-spacing: -2%;
-    /* padding: 1rem; */
+    padding-right: 1rem;
     /* margin: 0 auto; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
 }
 
 /* v1 grid coding - grid-template-columns: 33.33% 41.67% 25%; */
@@ -451,7 +402,49 @@ This grid code isn't quite working - not sure why or how to get images to align 
 .col25 {
     justify-content: space-evenly;
 } 
-/* Row 2 columns each occupy 25% of the area  */
+
+
+
+
+/* v3 test this grid code for playground images  */
+/* #playgroundGrid {
+    display: grid;
+    grid-template-columns: 4fr 5fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "col01List col02topRow col03topRow"
+        "IlleniumMain lanternFestivalNight KauaiBeach ladyPainting"
+    ;
+}
+
+.col01List {
+    grid-area: col01List;
+}
+
+.col02topRow {
+    grid-area: col02topRow;
+}
+
+.col03topRow {
+    grid-area: col03topRow;
+}
+
+#IlleniumMain {
+    grid-area: IlleniumMain;
+}
+
+#lanternFestivalNight {
+    grid-area: lanternFestivalNight;
+}
+
+#KauaiBeach {
+    grid-area: KauaiBeach;
+}
+
+#ladyPainting {
+    grid-area: ladyPainting;
+} */
+
 
 
 
@@ -685,6 +678,292 @@ form {
 @media only screen and (max-width: 600px) {
 
     /* Need to do media queries for homepage mobile view */
+
+
+    /* HERO section */
+
+
+
+    /* HEADER AND NAV styles */
+    .logo {
+        margin-left: 0.5rem;
+    }
+/* Should actually create a menu icon that leads to mobile menu instead  */
+    .topNav {
+        margin-right: 0.5rem;
+    }
+
+    h1 {
+        margin-left: 0.5rem;
+    }
+
+
+    /* ABOUT section  */
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .profilePic {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    /* How to center image?  */
+    }
+
+    
+    /* ABOUT Entrepreneur Venture */
+    /* .myEntrepreneurVenture {
+        padding-bottom: 2rem;
+    } */
+    .ventureContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .solImagery {
+        flex-grow: 1;
+    }
+    /* How to I get rid of the left margin or padding?  */
+    #SOLdecalImg {
+        transform: scale(.75);
+        border: 2px solid red;
+    }
+
+    .solImagery button {
+        cursor: pointer;
+/* want to center this button it's div  */
+        margin-top: 0px;
+        margin-bottom: 2rem;
+    }
+    
+    .solCopy {
+        flex-grow: 1;
+        width: 88%;
+        padding-right: 1rem;
+        border: 2px solid red;
+    }
+
+
+    /* ABOUT Playground */
+    .myPlayground {
+        padding-bottom: 4rem;
+    }
+/*     
+    .col01List {
+        border: 2px solid red;
+        margin-left: 0;
+    } */
+    
+    /* bullets or no bullets hmmm... code for no bullets */
+    /* .hobbiesList li {
+        list-style-type: none;
+    } */
+/*     
+    .hobbiesList {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        letter-spacing: -2%; */
+        /* padding: 1rem; */
+        /* margin: 0 auto; */
+    }
+    
+    /* v1 grid coding - grid-template-columns: 33.33% 41.67% 25%; */
+    /* .row1 {
+        display: grid;
+        grid-template-columns: 4fr 5fr 3fr;
+    }
+    
+    .row2 {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .col25 {
+        justify-content: space-evenly;
+    }  */
+
+    
+
+
+    /* v3 grid code - see if this works  */
+    /* #playgroundGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "hobbiesList hobbiesList"
+            "col02topRow col02topRow"
+            "col03topRow col03topRow"
+            "IlleniumMain lanternFestivalNight"
+            "KauaiBeach ladyPainting"
+            ;
+    }
+
+    .hobbiesList {
+        grid-area: hobbiesList;
+    }
+
+    .col02topRow {
+        grid-area: col02topRow;
+    }
+
+    .col03topRow {
+        grid-area: col03topRow;
+    }
+
+    #IlleniumMain {
+        grid-area: IlleniumMain;
+    }
+
+    #lanternFestivalNight {
+        grid-area: lanternFestivalNight;
+    }
+
+    #KauaiBeach {
+        grid-area: KauaiBeach;
+    }
+
+    #ladyPainting {
+        grid-area: ladyPainting;
+    } */
+
+
+
+
+    /* ABOUT Design Skills */
+    #UXidImg {
+        border: 2px solid red;
+        padding-left: 0px;
+        margin-left: 0.5rem;
+/* Need to make this img smaller and left aligned  */
+    }
+
+
+
+    /* ABOUT Design Tools */
+    .h2r {
+        text-align: left;
+    }
+
+    .designToolsIcons {
+        text-align: center;
+    }
+
+
+    /* WORK section */
+    .EducateYa {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        border: 2px solid red;
+    }
+
+    .educateYaPrototype {
+        margin-left: 0px;
+/* Make this image smaller and left aligned  */
+        transform: scale(0.75);
+        border: 2px solid red;
+    }
+
+    .educateYaSummary {
+        width: 88%;
+        border: 2px solid red;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+/* How to center this?  */
+    }
+
+    .DeptEd {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+        margin-right: 0.5rem;
+    }
+
+    .USdeptOfEducationSummary {
+        width: 88%;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .edCoverImage {
+        padding-top: 1rem;
+        border: 2px solid red;
+/* Control this rogue img file  */
+    }
+
+    .Meerkat {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+        padding-left: 0px;
+    }
+
+    .MeerkatCoverImage {
+        padding-bottom: 1rem;
+        padding-left: 0px;
+        margin-left: 0.5rem;
+/* Need to scale or shrink this image  */
+        border: 2px solid red;
+    }
+
+    .MeerkatSummary {
+        width: 88%;
+    }
+
+
+    /* CONNECT section */
+    #connect { 
+        padding-bottom: 4rem;
+    }
+
+    .formSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        margin-left: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .connectGIF {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    /* FOOTER section */
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerh1 {
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .connectIcons {
+        text-align: center;
+    }
+
+    .footerResume {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .footer button {
+        text-align: center;
+    }
+
+    #footerText {
+        text-align: center;
+    }
+
 }
 
 

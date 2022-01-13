@@ -26,7 +26,7 @@
 
 
 <body>
-<!-- Header with topNav -->
+<!-- v1 Header with topNav located at top of homepage-->
     <!-- <header class="header" id="myHeader">
         <img class="logo" src="images/LogoJVanRound.svg" alt="Jill Van's logo" width="150px" height="75px">
         <div class="topNav">
@@ -94,19 +94,17 @@
         <div class="aboutIntro">
             <h1>About</h1>
             <div class="aboutContainer">
-                <div class="profilePic">
-                <img src="images/profilePicPlaceholder.png" alt="profilePic" width="420px" height="592px">
-                </div>
+                <img class="profilePic" src="images/profilePicPlaceholder.png" alt="profilePic" width="420px" height="592px">
                 <div class="aboutCopy">
-                <p><strong class="header4">Hi! I'm Jill Van, <br></strong><strong class="header3">UX Designer</strong>with an <strong>extensive healthcare background in Occupational Therapy,</strong> specializing in cardiology. Certificate in UX/UI Design from University of Oregon’s Bootcamp. Bachelor’s of Science in Occupational Therapy from Eastern Washington University.
+                    <p><strong class="header4">Hi! I'm Jill Van, <br></strong><strong class="header3">UX Designer</strong>with an <strong>extensive healthcare background in Occupational Therapy,</strong> specializing in cardiology. Certificate in UX/UI Design from University of Oregon’s Bootcamp. Bachelor’s of Science in Occupational Therapy from Eastern Washington University.
                     <br>
                     <br>
                     <strong>Dedicated, self-directed, diligent worker.</strong> Works well independently or collaborating in a team. <strong>Organized yet flexible, creative thinker.</strong> Other designers recognize my <strong>forward-thinking</strong> and <strong>strong skills in communicating a vision to create positive change.</strong>
                     <br>
                     <br>
-                    I also <strong>co-own, operate a small business on Etsy, designing and creating vinyl decals.</strong> Additional roles: <strong>customer service, </strong>bookkeeping. <strong>Love of art and design </strong>motivated my career shift from healthcare to UX Design. My <strong>passion for enhancing user experiences and proactive problem solving</strong> make me a <strong>valuable addition to any team.</strong></p>
-                    <br>
-                <button type="button" class="button">Resume</button>
+                    I also <strong>co-own, operate a small business on Etsy, designing and creating vinyl decals.</strong> Additional roles: <strong>customer service, </strong>bookkeeping. <strong>Love of art and design </strong>motivated my career shift from healthcare to UX Design. My <strong>passion for enhancing user experiences and proactive problem solving</strong> make me a <strong>valuable addition to any team.</strong>
+                    </p>
+                    <button type="button" class="button">Resume</button>
                 </div>
             </div>
         </div>
@@ -116,7 +114,7 @@
             <h2>My Entrepreneur Venture</h2><br>
             <div class="ventureContainer">
                 <div class="solImagery">
-                    <img src="images/SOLdecals.png" alt="Stick Out Loud decals" width="640px" height="226px">
+                    <img id="SOLdecalImg" src="images/SOLdecals.png" alt="Stick Out Loud decals" width="640px" height="226px">
                     <button type="button" onclick="location.href='http://stickoutloud.com/'">Explore</button>
                 </div>
                 <div class="solCopy">
@@ -129,6 +127,7 @@
 <!--Testing out bootstrap grid v1 - need to figure out alignment/spacing of family photo on top row--> 
         <div class="myPlayground">
             <h2 class="h2r">My Playground</h2>
+                <div id="playgroundGrid">
                     <div class="row1">
                         <div class="col01List">
                             <div class="hobbiesList">
@@ -152,67 +151,30 @@
 
                     <div class="row2">
                         <div class="col25">
-                            <img class="IlleniumMain" src="images/playgroundImages/IlleniumStage.png" alt="Illenium concert stage">
+                            <img id="IlleniumMain" src="images/playgroundImages/IlleniumStage.png" alt="Illenium concert stage">
                             <!-- This part isn't working. I need to do this with JavaScript to create hover overlay image-->
                             <!-- <img class="overlayHover" src="images/playgroundImages/IlleniumPurpleLogo.png" alt="Illenium purple logo"> -->
                             <!--I'm trying to create hover overlay image-->
                         </div>
                         <div class="col25">
-                            <img src="images/playgroundImages/lanternFestivalNight.png" alt="Lantern Festival Night">
+                            <img id="lanternFestivalNight"  src="images/playgroundImages/lanternFestivalNight.png" alt="Lantern Festival Night">
                         </div>
                         <div class="col25">
-                            <img src="images/playgroundImages/KauaiBeach.png" alt="Kauai Beach">
+                            <img id="KauaiBeach" src="images/playgroundImages/KauaiBeach.png" alt="Kauai Beach">
                         </div>
                         <div class="col25"><div class="ladyPainting">
-                            <img src="images/playgroundImages/ladyPainting.png" alt="watercolor painting of lady in red">
+                            <img id="ladyPainting" src="images/playgroundImages/ladyPainting.png" alt="watercolor painting of lady in red">
                         </div>
                     </div>
+                </div>
             </div>
         </div>
 
 
 
-
-<!--Testing v2 grid code - need to figure out alignment/spacing of family photo on top row--> 
-        <!-- <div class="myPlayground">
-            <h2 class="h2r">My Playground</h2>
-            <div class="myPlaygroundGrid">  
-                <div class="hobbiesList">
-                    <ul>
-                        <li>Warm beaches</li><br>
-                        <li>Music festivals</li><br>
-                        <li>Night scenes - I'm a night owl!</li><br>
-                        <li>Leisurely hikes</li><br>
-                        <li>2-night camping</li><br>
-                        <li>Watercolor painting</li><br>
-                    </ul>
-                </div>
-                <div class="familyPhoto">
-                    <img src="images/playgroundImages/familyPhoto.png" alt="family photo">
-                </div> 
-                <div class="playgroundThomas">
-                    <img src="images/playgroundImages/playgroundThomas.png" alt="my white dog">  
-                </div>
-
-                <div class="IlleniumMain">
-                    <img src="images/playgroundImages/IlleniumStage.png" alt="Illenium concert stage">
-                </div>
-                <div class="lanternFestivalNight">
-                    <img src="images/playgroundImages/lanternFestivalNight.png" alt="Lantern Festival Night">
-                </div>
-                <div class="KauaiBeach">
-                    <img src="images/playgroundImages/KauaiBeach.png" alt="Kauai Beach">
-                </div>
-                <div class="ladyPainting">
-                    <img src="images/playgroundImages/ladyPainting.png" alt="watercolor painting of lady in red">
-                </div>
-            </div>
-        </div> -->
-
-
         <div class="designSkills">
             <h2>Design Skills</h2>
-            <img src="images/UXdesignSkillsWordCloud.png" alt="UX design skills word cloud" width="1024px" height="457px">
+            <img id="UXidImg" src="images/UXdesignSkillsWordCloud.png" alt="UX design skills word cloud" width="1024px" height="457px">
         </div>
 
         <div class="designTools">
