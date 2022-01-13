@@ -2,7 +2,8 @@
 h1 {
     color: #333B7E;
     font-family: 'Oswald', sans-serif;
-    font-size: 76px;
+    /* original font size was 76px  */
+    font-size: 108px;
     font-weight: bold;
     line-height: 84px;
     text-transform: uppercase;
@@ -17,7 +18,8 @@ h2 {
     color: #4C5064;
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
-    font-weight: 800;
+    /* Original was font-weight: 800;  */
+    font-weight: 700;
     line-height: 68px;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -97,8 +99,11 @@ strong {
 .footerh1 {
     color: #F1F0F4;
     text-align: left;
-    line-height: 16px;
-    padding-left: 3rem;
+    font-size: 76px;
+    line-height: 8px;
+    /* margin-left: 0px;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem; */
 }
 
 .footerh6 {
@@ -272,7 +277,23 @@ a {
 .scrollIcon {
     display: flex;
     justify-content: center;
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    animation: bounce 2s 5;
 }
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      } 
+}
+
 
 
 /* ABOUT Section */
@@ -711,7 +732,7 @@ form {
     /* How to center image?  */
     }
 
-    
+
     /* ABOUT Entrepreneur Venture */
     /* .myEntrepreneurVenture {
         padding-bottom: 2rem;
@@ -767,8 +788,10 @@ form {
         line-height: 1.25rem;
         letter-spacing: -2%; */
         /* padding: 1rem; */
-        /* margin: 0 auto; */
-    }
+        /* margin: 0 auto; 
+    } */
+    
+
     
     /* v1 grid coding - grid-template-columns: 33.33% 41.67% 25%; */
     /* .row1 {

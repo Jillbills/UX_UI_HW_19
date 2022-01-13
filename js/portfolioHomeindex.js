@@ -1,3 +1,5 @@
+
+// Sticky header feature - shows hero first, then scroll to stick header.
 window.onscroll = function() {myFunction()};
     
 var header = document.getElementById("myHeader");
@@ -10,3 +12,5 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+
