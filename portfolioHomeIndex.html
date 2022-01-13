@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jill Van's UX Design Portfolio Homepage</title>
+<!-- Meta code  -->
+    <meta name="description" content="Jill Van's UX Design Portfolio" />
+    <meta name="keywords" content="UX Design, UX/UI, user experience, digital portfolio, online portfolio" />
+    <meta http-equiv="author" content="Jill Van" />
+    <meta http-equiv="content-language" content="en-us" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Linking files  -->
+    <!-- Original linked file before homepage was renamed <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/portfolioHomeStyle.css">
+
+<!--Codes to embed Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Open+Sans&family=Oswald:wght@700&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+
+
+<!--Add anchor tags to topnav - defer until we learn more on JavaScript?-->
+<body>
+<!-- Header with topNav bar -->
+    <header class="navigation">
+        <div class="logo">
+            <img src="images/LogoJVanRound.svg" alt="Jill Van's logo" width="150px" height="75px">
+        </div>
+        <div class="topNav">
+            <nav class="inline">
+                <ul>
+                    <a href="#about"><li class="navLinks">About</li></a>
+                    <a href="#work"><li class="navLinks">Work</li></a>
+                    <a href="#connect"><li class="navLinks">Connect</li></a>
+                </ul>
+                <br>
+            </nav>
+        </div>
+    </header>
+
+<!--HERO Section-->
+    <section class="heroContent">
+        <div class="heroImg">
+            <img src="images/JVheroV1.png" class="hero" alt="Hi! I'm Jill Van hero image">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <div class="scrollIcon">
+            <img src="images/union.png" alt="scroll down icon" width="60px" height="26px">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+
+
+<!--ABOUT Section-->
+    <section id="about">
+        <div class="aboutIntro">
+            <h1>About</h1>
+            <div class="aboutContainer">
+                <div class="profilePic">
+                <img src="images/profilePicPlaceholder.png" alt="profilePic" width="420px" height="592px">
+                </div>
+                <div class="aboutCopy">
+                <p><strong class="header4">Hi! I'm Jill Van, <br></strong><strong class="header3">UX Designer</strong>with an <strong>extensive healthcare background in Occupational Therapy,</strong> specializing in cardiology. Certificate in UX/UI Design from University of Oregon’s Bootcamp. Bachelor’s of Science in Occupational Therapy from Eastern Washington University.
+                    <br>
+                    <br>
+                    <strong>Dedicated, self-directed, diligent worker.</strong> Works well independently or collaborating in a team. <strong>Organized yet flexible, creative thinker.</strong> Other designers recognize my <strong>forward-thinking</strong> and <strong>strong skills in communicating a vision to create positive change.</strong>
+                    <br>
+                    <br>
+                    I also <strong>co-own, operate a small business on Etsy, designing and creating vinyl decals.</strong> Additional roles: <strong>customer service, </strong>bookkeeping. <strong>Love of art and design </strong>motivated my career shift from healthcare to UX Design. My <strong>passion for enhancing user experiences and proactive problem solving</strong> make me a <strong>valuable addition to any team.</strong></p>
+                    <br>
+                <button type="button" class="button">Resume</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Need to create a modal warning user that they will be taken off site when clicking button to my Etsy page. Prefer if it opens in new tab so they don't go shopping instead of viewing rest of my portfolio  -->
+        <div class="myEntrepreneurVenture">
+            <h2>My Entrepreneur Venture</h2><br>
+            <div class="ventureContainer">
+                <div class="solImagery">
+                    <img src="images/SOLdecals.png" alt="Stick Out Loud decals" width="640px" height="226px">
+                    <button type="button" onclick="location.href='http://stickoutloud.com/'">Explore</button>
+                </div>
+                <div class="solCopy">
+                    <img src="images/SOLonEtsy.png" alt="Stick Out Loud Custom vinyl decals on Etsy" width="397px" height="92px"><br>
+                    <p>Our mission is to provide a means for others to express themselves, evoke conversation, and inspire positivity in our community as our decals help unite people with common interests. We love adventure and how exploring the PNW helps us achieve mental clarity. Together let's turn Sorry Outta Luck into Stick Out Loud (SOL) and feed it a positive soul!</p>
+                </div>
+            </div>
+        </div>
+            
+<!--Testing out bootstrap grid v1 - need to figure out alignment/spacing of family photo on top row--> 
+        <div class="myPlayground">
+            <h2 class="h2r">My Playground</h2>
+                    <div class="row1">
+                        <div class="col01List">
+                            <div class="hobbiesList">
+                                <ul>
+                                    <li>Warm beaches</li><br>
+                                    <li>Music festivals</li><br>
+                                    <li>Night scenes - I'm a night owl!</li><br>
+                                    <li>Leisurely hikes</li><br>
+                                    <li>2-night camping</li><br>
+                                    <li>Watercolor painting</li><br>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col02topRow">
+                            <img src="images/playgroundImages/familyPhoto.png">
+                        </div> 
+                        <div class="col03topRow">
+                            <img src="images/playgroundImages/playgroundThomas.png" alt="my adorable white dog" width="310px" height="312px">
+                        </div>
+                    </div>
+
+                    <div class="row2">
+                        <div class="col25">
+                            <img class="IlleniumMain" src="images/playgroundImages/IlleniumStage.png" alt="Illenium concert stage">
+                            <!-- This part isn't working. I need to do this with JavaScript to create hover overlay image-->
+                            <!-- <img class="overlayHover" src="images/playgroundImages/IlleniumPurpleLogo.png" alt="Illenium purple logo"> -->
+                            <!--I'm trying to create hover overlay image-->
+                        </div>
+                        <div class="col25">
+                            <img src="images/playgroundImages/lanternFestivalNight.png" alt="Lantern Festival Night">
+                        </div>
+                        <div class="col25">
+                            <img src="images/playgroundImages/KauaiBeach.png" alt="Kauai Beach">
+                        </div>
+                        <div class="col25"><div class="ladyPainting">
+                            <img src="images/playgroundImages/ladyPainting.png" alt="watercolor painting of lady in red">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+
+<!--Testing v2 grid code - need to figure out alignment/spacing of family photo on top row--> 
+        <!-- <div class="myPlayground">
+            <h2 class="h2r">My Playground</h2>
+            <div class="myPlaygroundGrid">  
+                <div class="hobbiesList">
+                    <ul>
+                        <li>Warm beaches</li><br>
+                        <li>Music festivals</li><br>
+                        <li>Night scenes - I'm a night owl!</li><br>
+                        <li>Leisurely hikes</li><br>
+                        <li>2-night camping</li><br>
+                        <li>Watercolor painting</li><br>
+                    </ul>
+                </div>
+                <div class="familyPhoto">
+                    <img src="images/playgroundImages/familyPhoto.png" alt="family photo">
+                </div> 
+                <div class="playgroundThomas">
+                    <img src="images/playgroundImages/playgroundThomas.png" alt="my white dog">  
+                </div>
+
+                <div class="IlleniumMain">
+                    <img src="images/playgroundImages/IlleniumStage.png" alt="Illenium concert stage">
+                </div>
+                <div class="lanternFestivalNight">
+                    <img src="images/playgroundImages/lanternFestivalNight.png" alt="Lantern Festival Night">
+                </div>
+                <div class="KauaiBeach">
+                    <img src="images/playgroundImages/KauaiBeach.png" alt="Kauai Beach">
+                </div>
+                <div class="ladyPainting">
+                    <img src="images/playgroundImages/ladyPainting.png" alt="watercolor painting of lady in red">
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="designSkills">
+            <h2>Design Skills</h2>
+            <img src="images/UXdesignSkillsWordCloud.png" alt="UX design skills word cloud" width="1024px" height="457px">
+        </div>
+
+        <div class="designTools">
+            <h2 class="h2r">Design Tools</h2>
+            <div class="designToolsIcons">
+                <img src="images/designToolsIcons/figmaIcon.png" alt="Figma icon" width="100px" height="128.68px"> &nbsp&nbsp&nbsp
+                <img src="images/designToolsIcons/miroIcon.png" alt="Miro icon" width="100px" height="128px"> &nbsp&nbsp&nbsp&nbsp
+                <img src="images/designToolsIcons/inVisionIcon.png" alt="InVision icon" width="100px" height="128px"> &nbsp&nbsp&nbsp&nbsp
+                <img src="images/designToolsIcons/googleIcon.png" alt="Google icon" width="100px" height="128px"> &nbsp&nbsp&nbsp&nbsp
+                <img src="images/designToolsIcons/trelloIcon.png" alt="Trello icon" width="100px" height="128px"> &nbsp&nbsp&nbsp&nbsp
+                <img src="images/designToolsIcons/photoshopIcon.png" alt="Photoshop icon" width="119px" height="128px">
+            </div>
+        </div>
+    </section>
+
+
+<!--WORK Section-->
+    <section id="work">
+        <h1>Work</h1>
+        <div class="EducateYa">
+            <!--Why is my mobile GIF not showing up? Does PNG files do GIF?-->
+            <!-- Ed.gov and Meerkat images are placeholders. To do: Replace Case Study cover slides with Mockup GIFS -->
+            <div class="educateYaPrototype">
+                <img src="images/caseStudy/EducateYa/EYRWDMockupSmall.png" alt="Edúcate Ya showcase redesign image" width="595px" height="350px">
+            </div>
+            <div class="educateYaSummary">
+                <h3>Edúcate Ya</h3>
+                <h6>Non-Profit Responsive Website Redesign</h6>
+                <br>
+                <p>Edúcate Ya is a non-profit organization that helps educate Latinos to achieve better jobs and access to healthcare. We redesigned the non-profit organization’s website to be responsive and visually engaging to improve usability, navigation, and user engagement.</p><br>
+                <button type="button">View Project</button>
+            </div>
+        </div>
+        <hr>
+
+        <div class="DeptEd">
+            <div class="USdeptOfEducationSummary">
+                <h3>U.S. Dept of Education</h3>
+                <h6>Government Agency Responsive Website Redesign</h6>
+                <br>
+                <p>Responsive website redesign of the U.S. Department of Education website to create a modern, professional style that intuitively guides users through their task flows to explore the comprehensive website with ease.</p><br>
+                <button type="button">View Project</button>
+            </div>
+            <div class="edCoverImage">
+                <img src="images/caseStudy/Edgov/EdgovCoverSlide.jpg" alt="U.S. Dept of Education showcase redesign image" width="595px" height="350px">
+            </div>
+        </div>
+        <hr>
+        <div class="Meerkat">
+            <div class="MeerkatCoverImage">
+            <img src="images/caseStudy/Meerkat/MeerkatCoverSlide.jpg" alt="Meerkat showcase travel mobile app image" width="595px" height="350px">
+            </div>
+            <div class="MeerkatSummary">
+                <h3>Meerkat</h3>
+                <h6>Mobile Travel App Design Prototype</h6>
+                <br>
+                <p>Mobile travel app solution that tracks lines, shortening users’ airport wait times.</p><br>
+                <button type="button">View Project</button>    
+            </div>
+        </div>
+
+    </section>
+
+
+
+<!--CONNECT Section-->
+    <section id="connect">
+        <h1>Let's Connect</h1>
+        <!--Check out the form action tutorial - where will the form take you?-->
+        <div class="formSection"> 
+            <form action="/desktopConnectionConfirmation.php">
+                <label for="name" class="formText" size="50px" c>Name*</label><br>
+                <input type="text" class="formText" id="name" name="name" placeholder="Enter your preferred name" size="40"><br>
+                <label for="required" class="formText">*Required</label><br><br>
+                <label for="emailAddress" class="formText">Email address*</label><br>
+                <input type="text" class="formText" id="emailAddress" name="emailAddress" placeholder="Type email address" size="40"><br>
+                <label for="required" class="formText">*Required</label><br><br>
+                <label for="phoneNumber" class="formText">Phone number</label><br>
+                <input type="phoneNumber" class="formText" id="phoneNumber" name="phoneNumber" placeholder="(xxx) xxx - xxxx" size="40"><br>
+                <label for="optional" class="formText">Optional</label><br><br>
+                <label for="mayItext" class="formText">May I text you at this number?</label><br>
+                    <input type="radio" class="formText" name="yesorno" value="yes"><span class="formText">Yes</span><br>
+
+                    <input type="radio" class="formText" name="yesorno" value="no"><span class="formText">No</span><br><br>
+                <label for="messageBox" class="formText">Message*</label><br>
+                <textarea id="messageBox" class="formText" name="messageBox" rows="10" cols="50" placeholder="Your message"></textarea><br>
+                <!-- </div><br> -->
+                <label for="messageBoxNote" class="formText">I'll never share your email with anyone else</label><br><br>
+                <button type="button">Submit</button>
+            </form>
+            <div class="connectGIF">
+                <iframe src="https://giphy.com/embed/KEHi4pArjMWOSnpQfh" width="480" height="356" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/RosannaPansino-ro-rosanna-pansnio-KEHi4pArjMWOSnpQfh"></a></p>
+            </div>
+        </div>
+
+    </section>
+
+
+<!--Footer-->
+    <footer>
+    <section class="footer">
+        <div>
+            <h1 class="footerh1">Let's</h1>
+            <h1 class="footerh1">Connect!</h1>
+        </div>
+
+        <div class="connectIcons">
+            <div class="emailWithIcon">
+                <img src="images/emailIcon.png" alt="email icon" width="60px" height="42px">
+                <h4 class="emailText">Email</h4>
+            </div>
+
+            <div class="LinkedInWithIcon">
+                <img src="images/LinkedInIcon.png" alt="LinkedIn icon" width="60px" height="55px">
+                <h4 class="LinkedInText">LinkedIn</h4>
+            </div>
+        </div>
+
+        <div class="footerResume">
+            <h6 class="footerh6">Explore my work history</h6>
+            <button id="buttonResume" type="button">Resume</button>
+        </div>
+
+        <p id="footerText"> &copy Copyright 2022 - Designed by Jill Van</p>
+    </section>
+    </footer>
+
+</body>
+
+</html>

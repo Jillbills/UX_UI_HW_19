@@ -1,0 +1,664 @@
+/* TEXT/FONT/COPY Styles */
+h1 {
+    color: #333B7E;
+    font-family: 'Oswald', sans-serif;
+    font-size: 76px;
+    font-weight: bold;
+    line-height: 84px;
+    text-transform: uppercase;
+    text-align: center; 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+h2 {
+    color: #4C5064;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 68px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+h3 {
+    color: #4C5064;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -4%;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+h6 {
+    color: #6667AB;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+.h2r {
+   text-align: right;
+}
+
+.header3 {
+    color: #4C5064;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+.header4 {
+    color: #6667AB;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -4%;
+}
+
+strong {
+    color: #6667AB;
+}
+
+.formText {
+    color: #4C5064;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footerh1 {
+    color: #F1F0F4;
+    text-align: left;
+    line-height: 16px;
+    padding-left: 3rem;
+}
+
+.footerh6 {
+    color: #F1F0F4;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
+}
+
+#footerText {
+    color: #F1F0F4;
+    font-family: 'Inter'; sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    padding-left: 3rem;
+    /* why is the copyright footer text not centered? */
+}
+
+/* #h2.h2rightAlign {
+    text-align: right;
+} */
+
+
+
+/* BUTTON/ASSETS STYLES */
+button {
+    border: 3px solid #6667AB;
+    border-radius: 4px;
+    color: #6667AB;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-style: 'Inter'; sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    /* Use these properties below??? */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+}
+
+button:hover {
+    background-color: #6667AB;
+    color: #F1F0F4;
+    border: 3px solid #6667AB;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-style: 'Inter'; sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    /* Use these properties below??? */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+}
+
+.designToolsIcons {
+    text-align: right;
+}
+
+
+/* NAV STYLES */
+.logo {
+    margin-left: 2rem;
+}
+
+.navigation {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topNav {
+    align-items: flex-end;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+
+.inline {
+    display: inline;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.navLinks {
+    display: inline;
+    color: #333B7E;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    vertical-align: middle; 
+    margin-top: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* FLEXBOX Styles */
+/* .flex {
+    display: flex;
+} */
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+.hobbiesList {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: -2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1.25rem;
+    margin: 0 auto;
+}
+
+/* v1 grid coding */
+/* grid-template-columns: 33.33% 41.67% 25%; */
+.row1 {
+    display: grid;
+    grid-template-columns: 4fr 5fr 3fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.col25 {
+    justify-content: space-evenly;
+} 
+/* Row 2 columns each occupy 25% of the area  */
+
+
+
+/* Testing grid code v2 - How do I get family photo to right align along grid?
+This grid code isn't quite working - not sure why or how to get images to align along the 12 column grid */
+/* 
+.myPlaygroundGrid {
+    display: grid;
+    grid-template-columns: 4fr 5fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "hobbiesList familyPhoto playgroundThomas"
+        "IlleniumMain lanternFestivalNight KauaiBeach ladyPainting"
+        ;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.hobbiesList {
+    grid-area: hobbiesList;
+}
+
+.familyPhoto {
+    grid-area: familyPhoto;
+}
+
+.playgroundThomas {
+    grid-area: playgroundThomas;
+}
+
+.IlleniumMain {
+    grid-area: IlleniumMain;
+}
+
+.lanternFestivalNight {
+    grid-area: lanternFestivalNight;
+}
+
+.KauaiBeach {
+    grid-area: KauaiBeach;
+}
+
+.ladyPainting {
+    grid-area: ladyPainting;
+} */
+
+
+
+/* HERO Section */
+.heroContent {
+    background-color: #6667AB;
+}
+
+.heroImg {
+    background-color: #6667AB;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* width: 100%;  */
+    transform: scale(0.80);
+}
+
+.hero{
+    width: 100%;
+}
+
+.scrollIcon {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ABOUT Section */
+#about {
+    padding-top: 0.5rem;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+    
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profilePic {
+    flex-shrink: 1;
+    padding: 3rem;
+}
+
+.aboutCopy {
+    flex-grow: 1;
+    padding: 3rem;
+}
+
+.about h2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.myEntrepreneurVenture {
+    padding-bottom: 2rem;
+}
+
+.ventureContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.solImagery {
+    width: 50%;
+    flex-grow: 1;
+    margin-left: 2rem;
+}
+
+.solImagery button {
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.solCopy {
+    width: 30%;
+    flex-grow: 1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.myPlayground {
+    padding-bottom: 4rem;
+}
+
+.col01List {
+    border: 2px solid red;
+    margin-left: 0;
+}
+
+/* bullets or no bullets hmmm... code for no bullets */
+/* .hobbiesList li {
+    list-style-type: none;
+} */
+
+.hobbiesList {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: -2%;
+    /* padding: 1rem; */
+    /* margin: 0 auto; */
+}
+
+/* v1 grid coding - grid-template-columns: 33.33% 41.67% 25%; */
+.row1 {
+    display: grid;
+    grid-template-columns: 4fr 5fr 3fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.col25 {
+    justify-content: space-evenly;
+} 
+/* Row 2 columns each occupy 25% of the area  */
+
+
+
+
+
+.designSkills {
+    padding-bottom: 4rem;
+}
+
+.designTools {
+    margin-bottom: 8rem; 
+}
+
+.designToolsIcons {
+    margin-right: 2rem;
+ 
+}
+
+
+/* WORK Section */
+#work {
+    background-color: #F1F0F4;
+    padding-top: 0.5rem;
+    padding-bottom: 8rem;
+}
+
+.EducateYa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+/* Alignment for this prototype img div doesn't seem to be working */
+.educateYaPrototype {
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.educateYaSummary {
+    width: 50%;
+    flex-grow: 1;
+    margin-left: 2rem;
+    margin-right: 3rem;
+}
+
+.DeptEd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 2rem;
+    margin-left: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.USdeptOfEducationSummary {
+    width: 50%;
+    flex-grow: 1;
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+.edCoverImage {
+    margin-right: 3rem;
+}
+
+.Meerkat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-top: 4rem;
+}
+
+.MeerkatCoverImage {
+    margin-left: 3rem;
+}
+
+.MeerkatSummary {
+    width: 50%;
+    flex-grow: 1;
+    padding-left: 2rem;
+    margin-right: 3rem;
+}
+
+
+/* CONNECT Section */
+#connect{
+    padding-top: 0.5rem;
+    padding-bottom: 8rem;
+}
+
+.formSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+form {
+    margin-left: 8rem;
+}
+
+.connectGIF {
+    /* display: flex; */
+    align-items: flex-start;
+    /* justify-content: center; */
+    margin-left: 2rem;
+    margin-right: 8rem;
+}
+
+
+
+/* FOOTER Styles */
+.footer {
+    background-color: #6667AB;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+    grid-template-rows: 1.75fr 0.25fr;
+    grid-template-areas: 
+        "footerh1 connectIcons footerResume"
+        "#footerText #footerText #footerText"
+        ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* .footerh1 {
+    grid-area: footerh1;
+} */
+
+.connectIcons {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    /* grid-area: connectIcons; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footerh1 {
+    color: #F1F0F4;
+    text-align: left;
+    /* line-height: 16px; */
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footerh6 {
+    color: #F1F0F4;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -2%;
+}
+
+#footerText {
+    color: #F1F0F4;
+    font-family: 'Inter'; sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+/* Why can't I get this p id div to center across the entire width?  */
+}
+
+.emailWithIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.emailText {
+    color: #F1F0F4;
+    padding-left: 2rem;
+}
+
+.LinkedInWithIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.LinkedInText {
+    color: #F1F0F4;
+    padding-left: 2rem;
+}
+
+#buttonResume {
+    margin-left: 3.75rem;
+}
+
+.footer button {
+/* I want to center this in the div */
+    border: 3px solid #ECE5BA;
+    border-radius: 4px;
+    color: #ECE5BA;
+    box-sizing: border-box;
+    background-color: #6667AB;
+    margin-top: 1rem;
+}
+
+.footer button:hover {
+    background: #F1F0F4;
+    color: #6667AB;
+    border-color: #F1F0F4;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
+
+
+
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+/* Media Queries Media Queries Media Queries Media Queries Media Queries */
+@media only screen and (max-width: 600px) {
+
+    /* Need to do media queries for homepage mobile view */
+}
