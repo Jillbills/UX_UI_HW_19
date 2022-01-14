@@ -93,20 +93,24 @@
             </div>
         </div>
 
-        <!-- Need to create a modal warning user that they will be taken off site when clicking button to my Etsy page. Prefer if it opens in new tab so they don't go shopping instead of viewing rest of my portfolio  -->
+
         <div class="myEntrepreneurVenture">
             <h2>My Entrepreneur Venture</h2><br>
             <div class="ventureContainer">
                 <div class="solImagery">
                     <img id="SOLdecalImg" src="images/SOLdecals.png" alt="Stick Out Loud decals" width="640px" height="226px">
-                    <button id="SOLbutton" type="button" onclick="location.href='http://stickoutloud.com/'">Explore</button>
+                    <!-- <button id="SOLbutton" type="button" onclick="location.href='http://stickoutloud.com/'" target="_blank" rel="noopener noreferrer">Explore</button>  -->
+                    <button id="SOLbutton" type="button" onclick="window.open('http://stickoutloud.com/')" target="_blank" rel="noopener noreferrer">Explore</button>
                 </div>
                 <div class="solCopy">
                     <img src="images/SOLonEtsy.png" alt="Stick Out Loud Custom vinyl decals on Etsy" width="397px" height="92px"><br>
                     <p>Our mission is to provide a means for others to express themselves, evoke conversation, and inspire positivity in our community as our decals help unite people with common interests. We love adventure and how exploring the PNW helps us achieve mental clarity. Together let's turn Sorry Outta Luck into Stick Out Loud (SOL) and feed it a positive soul!</p>
                 </div>
             </div>
+
+        <!-- Need to create a modal warning user that they will be taken off site when clicking button to my Etsy page. Prefer if it opens in new tab so they don't go shopping instead of viewing rest of my portfolio  -->
         <!-- The modal content is #modalSOL -->
+
             <!-- <div id="modalSOL" class="modal">
                 <span class="close">&times;</span>
                 <h3 class="h3modal">Warning:</h3>
@@ -114,6 +118,7 @@
                     <br>some fabulous decals offsite. 
                     <br>Hope to see you again soon!</p>
             </div> -->
+
         </div>
             
 <!--Testing out bootstrap grid v1 - need to figure out alignment/spacing of family photo on top row--> 

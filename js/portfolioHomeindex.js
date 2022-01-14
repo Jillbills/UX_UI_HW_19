@@ -18,7 +18,7 @@ function myFunction() {
 
 // Not currently active - need to reactivate HTML for this to work 
 // MODAL when you click Explore button in the About section of my homepage 
-// Get the modal
+// Get the modal 
 // var modal = document.getElementById("modalSOL");
 
 // // Get the button that opens the modal
@@ -47,9 +47,10 @@ function myFunction() {
 
 
 
-// Not currently active - need to reactivate HTML for this to work 
+
+
 // MODAL when  you click Submit button in the Connect section of my homepage 
-// Get the modal
+// Get the modal 
 var modal = document.getElementById("modalConnect");
 
 // Get the button that opens the modal
@@ -60,8 +61,8 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
-//   modal.style.display = "#modalConnect";  ???
-//   modal.style.display = "block"; this was the original code but not working - probably because I changed the names?
+// This original code works to open the modal but modal also opens everytime page is refreshed ???
+  modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -76,3 +77,7 @@ window.onclick = function(event) {
   }
 }
 
+
+
+// Open URL in a new tab when clicking a button 
+window.open(url, "_blank");
