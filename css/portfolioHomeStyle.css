@@ -1036,35 +1036,41 @@ How do I shrink this img? flex-shrink doesn't appear to be working */
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 0px;
-        border: 2px solid red;
-    }
-
-    .educateYaPrototype {
-        /* Make this image smaller and left aligned  */
-        margin-left: 0px;
-        transform: scale(0.75);
-        border: 2px solid red;
+        align-items: center;
     }
 
     .educateYaSummary {
         width: 88%;
-        border: 2px solid red;
-        /* margin-left: 0.5rem; */
-/* How to center this?  */
         margin-right: 0.5rem;
         justify-self: center;
-
     }
+
+    .educateYaPrototype {
+        padding-top: 1rem;
+        max-width: 595px;
+        display: flex;   
+    }
+
+    .educateYaSummary, .educateYaPrototype {
+        width: 88%;
+        padding-bottom: 2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .educateYaPrototype img {
+        width: 100%;
+    }
+
 
     .DeptEd {
         display: flex;
         flex-direction: column;
-        justify-self: center;
-        border: 2px solid red;
+        justify-content: center;
+        align-items: center;
     }
 
-    .USdeptOfEducationSummary {
+    .USdeptOfEducationSummary, .edCoverImage {
         width: 88%;
         padding-bottom: 2rem;
         margin-left: 0.5rem;
@@ -1073,31 +1079,50 @@ How do I shrink this img? flex-shrink doesn't appear to be working */
 
     .edCoverImage {
         padding-top: 1rem;
-        border: 2px solid red;
-/* Control this rogue img file. Why isn't flex-shrink working? */
+        max-width: 595px;
         display: flex;        
-        flex-shrink: 1;
     }
 
+    .edCoverImage img {
+        width: 100%;
+    }
+
+    /* Control this rogue img file. Why isn't flex-shrink working? */
     .Meerkat {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         border: 2px solid red;
-        padding-left: 0px;
-    }
-
-    .MeerkatCoverImage {
-        padding-bottom: 1rem;
-        padding-left: 0px;
-        margin-left: 0.5rem;
-/* Need to scale or shrink this image  */
-        border: 2px solid red;      
-        flex-shrink: 4;
     }
 
     .MeerkatSummary {
         width: 88%;
+        margin-right: 0.5rem;
+        justify-self: center;
     }
+
+    .MeerkatCoverImage {
+        /* Need to scale or shrink this image  */
+        padding-top: 1rem;
+        max-width: 595px;
+        display: flex;    
+    }
+
+    .MeerkatSummary, .MeerkatCoverImage {
+        width: 88%;
+        padding-bottom: 2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .MeerkatCoverImage img {
+        width: 100%;
+    }
+
+
+
+
 
 
     /* CONNECT section */
