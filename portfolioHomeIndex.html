@@ -12,6 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- Linking files  -->
+    <!-- Bootstrap CSS file  -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  -->
+
     <!-- Original linked file before homepage was renamed <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/portfolioHomeStyle.css">
 
@@ -45,7 +48,11 @@
 <!--HERO Section-->
     <section class="heroContent">
         <div class="heroImg">
-            <img src="images/Hero/HeroDefault.png" class="hero" alt="Hi! I'm Jill Van hero image">
+            <img src="./images/Hero/HeroDefault.png" class="hero" alt="Hi! I'm Jill Van. Here's my hero image">
+        </div>
+
+        <div class="heroLogo">
+            <img src="./images/LogoJVanRoundDark.svg" alt="Hi! I'm Jill Van hero image">
         </div>
 
         <div class="scrollIcon">
@@ -137,35 +144,42 @@
                             </div>
                         </div>
                         <div class="col02topRow">
-                            <img id="familyPhoto" src="images/playgroundImages/familyPhoto.png" alt="my family photo">
-                            <img id="familyPhoto" src="images/playgroundImages/theOffspring.png" alt="my kids' photo">
+                            <div class="familyPhoto" alt="my family photo"> 
+                            </div>
+                            <!-- <img id="familyPhoto" src="./images/playgroundImages/familyPhoto.png" alt="my family photo">   -->
+                            <!-- <img id="familyPhoto" src="./images/playgroundImages/theOffspring.png" alt="my kids' photo">  -->
                         </div> 
                         <div class="col03topRow">
-                            <img id="thomasPic" src="images/playgroundImages/playgroundThomas.png" alt="my white dog">
-                            <img id="thomasPic" src="images/playgroundImages/ShinobiPainting.png" alt="my dog watercolor painting">
+                            <img id="thomasPic" src="./images/playgroundImages/playgroundThomas.png" alt="my white dog">
+                            <img id="thomasPic" src="./images/playgroundImages/ShinobiPainting.png" alt="my dog watercolor painting">  
                         </div>
                     </div>
 
+                    <!--Hover overlay images-->
                     <div class="row2">
                         <div class="col25">
-                            <img id="IlleniumMain" src="images/playgroundImages/IlleniumStage.png" alt="Illenium concert stage"> 
+                            <div class="Illenium">
+                            </div>
+                            <!-- <img id="IlleniumMain" src="./images/playgroundImages/IlleniumStage.png" alt="Illenium concert stage">   -->
                             <!-- <img id="IlleniumMain" src="images/playgroundImages/IlleniumStage.png" alt="Illenium concert stage" onmouseover="swap('/images/playgroundImages/IlleniumPurpleLogo.png')" onmouseout="swap('images/playgroundImages/IlleniumStage.png')">  -->
-                            <!-- This part isn't working. I need to do this with JavaScript to create hover overlay image-->
-                            <img id="hoverIllenium" src="images/playgroundImages/IlleniumPurpleLogo.png" alt="Illenium purple logo">
-                            <!--I'm trying to create hover overlay image-->
                         </div>
                         <div class="col25">
-                            <img id="lanternFestivalNight"  src="images/playgroundImages/lanternFestivalNight.png" alt="Lantern Festival Night">
-                            <img id="hoverLantern" src="images/playgroundImages/lanternFestivalSunset.png" alt="Lantern Festival Sunset"> 
+                            <div class="lanternFestivalPic">
+                            </div>
+                            <!-- <img id="lanternFestivalNight"  src="./images/playgroundImages/lanternFestivalNight.png" alt="Lantern Festival Night">  -->
+                            <!-- <img id="hoverLantern" src="./images/playgroundImages/lanternFestivalSunset.png" alt="Lantern Festival Sunset">  -->
                         </div>
                         <div class="col25">
-                            <img id="KauaiBeach" src="images/playgroundImages/KauaiBeach.png" alt="Kauai Beach">
-                            <img id="hoverKauai" src="images/playgroundImages/HawaiiBeach.png" alt="Hawaii beach 2">
+                            <div class="beachPic">
+                            </div>
+                            <!-- <img id="KauaiBeach" src="./images/playgroundImages/KauaiBeach.png" alt="Kauai Beach"> -->
+                            <!-- <img id="hoverKauai" src="./images/playgroundImages/HawaiiBeach.png" alt="Hawaii beach 2">  -->
                         </div>
-                        <div class="col25"><div class="ladyPainting">
-                            <img id="ladyPainting" src="images/playgroundImages/ladyPainting.png" alt="watercolor painting of lady in red">
-                            <img id="hoverPainting" src="images/playgroundImages/flamingoPainting.png" alt="Flamingo watercolor painting">
-                        </div>
+                        <div class="col25">  
+                            <div class="wcPainting" alt="watercolor painting of lady in red"> 
+                            </div>
+
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -284,6 +298,38 @@
             <h3 class="h3modal">Thank You!</h3>
             <p class="pModal">I'll be in touch with you soon.</p>
         </div> 
+
+
+
+        
+        
+        <!-- Button triggers Bootstap modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Launch demo modal
+        </button>
+        
+        
+        <!-- Bootstrap Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Thank you!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
         <hr>
     </section>
 
@@ -322,7 +368,12 @@
 
 
 
-<script src="js/portfolioHomeindex.js">
+<!-- Bootstrap JavaScript  -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- My JavaScript  -->
+<script src="./js/portfolioHomeindex.js">
 </script>
 
 </body>

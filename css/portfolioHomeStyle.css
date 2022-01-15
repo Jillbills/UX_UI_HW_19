@@ -189,6 +189,33 @@ button:hover {
     margin-left: 2rem;
 }
 
+
+.heroLogo {
+
+}
+
+.heroLogo.animate {
+    animation: slide 2s ease-in-out;
+    animation-direction: forwards;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(25%);
+      }
+      40% {
+        transform: translateX(40%);
+      }
+      60% {
+        transform: translateX(-25px);
+      } 
+      80% {
+        transform: translateX(40%);
+      } 
+}
+
+
+
 .header {
     background-color: #000000;
     padding: 0;
@@ -277,7 +304,7 @@ a {
     justify-content: center;
     /* padding-bottom: 1%; */
     z-index: 1;
-    animation: bounce 2s 15;
+    animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
@@ -408,7 +435,6 @@ Color for modal BG is #F27224  */
     padding: 4rem;
     width: 75%;
     align-items: center; 
-    vertical-align: middle;
 }
 
 .h3modal {
@@ -491,11 +517,26 @@ Color for modal BG is #F27224  */
     margin-right: 0px;
 }
 
-#familyPhoto {
+/* #familyPhoto {
+    width: 96%;
+    margin-left: 3%;
+    margin-right: 0%;
+} */
+
+.familyPhoto {
+    background-image: url("../images/playgroundImages/familyPhoto.png");
+    height: 100%;
     width: 96%;
     margin-left: 3%;
     margin-right: 0%;
 }
+
+.familyPhoto:hover {
+    background-image: url("../images/playgroundImages/theOffspring.png");
+    height: 100%;
+}
+
+
 #thomasPic {
     width: 96%;
     margin-left: 2%;
@@ -537,9 +578,10 @@ Color for modal BG is #F27224  */
 
 .col25 {
     /* justify-content: space-evenly;  */
-    width: 100%;
+    height: 300px;
 } 
 
+/* 
 #IlleniumMain, #lanternFestivalNight, #KauaiBeach, #ladyPainting {
     width: 96%;
     margin-left: 2%;
@@ -550,11 +592,56 @@ Color for modal BG is #F27224  */
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
+} */
+
+
+
+/* Add transition effects here
+Trick was to be sure that I am using the ../images to follow the correct file structure. It also need a height set to it i.e. height: 100% */
+.Illenium {
+    background-image: url("../images/playgroundImages/IlleniumStage.png"); 
+    height: 100%;
 }
 
-/* #IlleniumMain:hover {
-    background-image: url("/images/playgroundImages/IlleniumPurpleLogo.png");
-} */
+.Illenium:hover {
+    background-image: url("../images/playgroundImages/IlleniumPurpleLogo.png");
+    height: 100%;
+}
+
+.lanternFestivalPic {
+    background-image: url("../images/playgroundImages/lanternFestivalNight.png"); 
+    height: 100%;
+}
+
+.lanternFestivalPic:hover {
+    background-image: url("../images/playgroundImages/lanternFestivalSunset.png"); 
+    height: 100%;
+}
+
+.beachPic {
+    background-image: url("../images/playgroundImages/KauaiBeach.png"); 
+    height: 100%;
+}
+
+.beachPic:hover {
+    background-image: url("../images/playgroundImages/HawaiiBeach.png"); 
+    height: 100%;
+}
+
+.wcPainting {
+    background-image: url("../images/playgroundImages/ladyPainting.png"); 
+    /* height: 100%; */
+    height: 300px;  
+    background-repeat: no-repeat;
+}
+
+.wcPainting:hover {
+    background-image: url("../images/playgroundImages/flamingoPainting.png"); 
+    height: 100%; 
+}
+
+
+
 
 
 
@@ -747,10 +834,9 @@ form {
     cursor: pointer;
 }
 
-/* The modal background */
 
 
-/* The modal content dialog */
+/* My custom modal - The background */
 .modal {
     display: none;  /* hidden by default */
     position: fixed;
@@ -771,6 +857,7 @@ form {
     margin: auto;
 }
 
+/* My custom modal - The modal content dialog */
 #modalConnect {
     /* display: block;  Leave this out because it disrupts the code - is in conflict with class of modal display: none */ 
     background-color: #392F80;
@@ -818,6 +905,10 @@ form {
     text-decoration: none;
     cursor: pointer; 
 }
+
+
+
+/* Bootstrap modal with custom styling on it  */
 
 
 
@@ -1108,9 +1199,9 @@ form {
     }
 
     .educateYaSummary {
-        /* width: 88%;  */
-        /* margin-right: 0.5rem;  */
-        /* justify-self: center;  */
+        width: 88%; 
+        margin-right: 0.5rem;  
+        justify-self: center; 
     }
 
     .educateYaPrototype {

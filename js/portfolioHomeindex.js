@@ -1,4 +1,11 @@
 
+// ANIMATE logo on hero image 
+$(document).ready(function() {
+    $(".heroLogo").addClass("animate");
+});
+
+
+
 // STICKY HEADER feature - shows hero img first, then scroll to stick header.
 window.onscroll = function() {myFunction()};
     
@@ -35,7 +42,7 @@ function myFunction() {
 
 
 // Opens StickOutLoud website URL in a new tab when clicking a button 
-window.open(url, "_blank");
+// window.open(url, "_blank");
 
 
 
@@ -68,66 +75,6 @@ window.open(url, "_blank");
 //   }
 // }
 
-
-
-
-
-// On hover, PLAYGROUND img's will change and fade out 
-
-// $("#IlleniumMain").hover(function() {
-//     $(this).addClass("#hoverIllenium");
-//     }, function() {
-//     $(this).removeClass("#IlleniumMain");
-//     }
-// );
-
-// $("#IlleniumMain").mouseenter(handlerIn).mouseleave(handlerOut); 
-
-
-
-// $("#IlleniumMain").hover(function() {
-//     $(this).add("#hoverIllenium");
-//     }, function() {
-//     $(this).remove("#IlleniumMain");
-//     }
-// );
-
-// $("#hoverIllenium").mouseleave(function) {
-//     $(this).add("#IlleniumMain");
-//     }, function() {
-//     $(this).remove("#hoverIllenium");  
-//     }
-// );
-
-
-
-
-// var handlerIn = document.getElementById("#IlleniumMain");
-
-// // Get the button that opens the modal
-// var handlerOut = document.getElementById("#hoverIllenium");
-
-// $("#IlleniumMain").mouseenter(handlerIn).mouseleave(handlerOut); 
-
-
-
-// Why aren't any of these working? 
-// $("#IlleniumMain").mouseover(function() {
-//         this.src="/images/images/playgroundImages/IlleniumPurpleLogo.png"
-//     }).mouseout(function() {
-//          this.src="images/playgroundImages/IlleniumStage.png"
-// });
-  
-
-
-// $(function() {
-//     $("#IlleniumMain").hover(function() {
-//         $(this).attr('src', '../images/playgroundImages/IlleniumPurpleLogo.png');
-//     }, 
-//     function() {
-//         $(this).attr('src', '../images/playgroundImages/IlleniumStage.png');
-//     }) 
-// });
 
 
 
