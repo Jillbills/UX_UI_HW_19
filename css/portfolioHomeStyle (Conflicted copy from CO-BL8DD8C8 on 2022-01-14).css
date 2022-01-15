@@ -619,34 +619,33 @@ Color for modal BG is #F27224  */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 3%;
-    margin-left: 3%;
+    margin-right: 4%;
+    margin-left: 4%;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    border: 2px solid blue;
 }
-
+/* Alignment for this prototype img div doesn't seem to be working */
 .educateYaPrototype {
-    width: 42%;
-    margin-left: 3%;
+    align-items: center;
+    margin-left: 3rem;
+    border: 2px solid red;
 }
 
 .educateYaSummary {
-    width: 42%;
+    width: 50%;
     flex-grow: 1;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-#EYmockup {
-    width: 100%;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    border: 2px solid red;
 }
 
 .DeptEd {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 3%;
-    margin-left: 3%;
+    margin-right: 4%;
+    margin-left: 4%;
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
@@ -655,7 +654,7 @@ Color for modal BG is #F27224  */
     flex-grow: 1;
     width: 42%;
     margin-left: 3%;
-    margin-right: 3%;
+    margin-right: 2%;
 }
 
 .edCoverImage {
@@ -671,27 +670,25 @@ Color for modal BG is #F27224  */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 3%;
-    margin-left: 3%;
+    margin-right: 4%;
+    margin-left: 4%;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    border: 2px solid blue;
 }
 
 .MeerkatCoverImage {
-    /* flex-basis: 595px;  */
-    width: 42%;
-    margin-left: 3%;
-}
-
-#MeerkatImg {
-    width: 100%;
+    margin-left: 3rem;
+    flex-basis: 595px;
+    border: 2px solid red;
 }
 
 .MeerkatSummary {
-    width: 42%;
+    width: 50%;
     flex-grow: 1;
-    margin-left: 3%;
-    margin-right: 3%;
+    padding-left: 2rem;
+    margin-right: 3rem;
+    border: 2px solid red;
 }
 
 
@@ -700,8 +697,7 @@ Color for modal BG is #F27224  */
     /* background-color: #F1F0F4;  */
     background-color: #000000;
     padding-top: 5rem;
-    /* padding-bottom: 8rem;  */
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
 }
 
 .formSection {
@@ -713,16 +709,14 @@ Color for modal BG is #F27224  */
 
 form {
     margin-left: 8rem;
-    padding-bottom: 8rem;
 }
 
 .connectGIF {
     /* display: flex; */
     align-items: flex-start;
     /* justify-content: center; */
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-bottom: 4rem;
+    margin-left: 2rem;
+    margin-right: 8rem;
 }
 
 #connectButton {
@@ -943,13 +937,12 @@ form {
 
     /* HEADER AND NAV styles */
     .logo {
-        margin-left: 1%;
+        margin-left: 0.5rem;
     }
 /* Should actually create a menu icon that leads to mobile menu instead  */
     .topNav {
         margin-right: 0.5rem;
     }
-
 
     /* To make nav list items stack in a column instead */
     /* ul {
@@ -1090,21 +1083,22 @@ form {
     }
 
     .educateYaSummary {
-        /* width: 88%;  */
-        /* margin-right: 0.5rem;  */
-        /* justify-self: center;  */
+        width: 88%;
+        margin-right: 0.5rem;
+        justify-self: center;
     }
 
     .educateYaPrototype {
         padding-top: 1rem;
         max-width: 595px;
+        display: flex;   
     }
 
     .educateYaSummary, .educateYaPrototype {
         width: 88%;
         padding-bottom: 2rem;
-        /* margin-left: 0.5rem;
-        margin-right: 0.5rem; */
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     .educateYaPrototype img {
@@ -1122,13 +1116,14 @@ form {
     .USdeptOfEducationSummary, .edCoverImage {
         width: 88%;
         padding-bottom: 2rem;
-        /* margin-left: 0.5rem;
-        margin-right: 0.5rem; */
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     .edCoverImage {
         padding-top: 1rem;
-        max-width: 595px;    
+        max-width: 595px;
+        display: flex;        
     }
 
     .edCoverImage img {
@@ -1139,21 +1134,26 @@ form {
     .Meerkat {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
+        justify-content: center;
         align-items: center;
-        /* margin: 0 auto; */
+        border: 2px solid red;
+        margin: 0 auto;
         /* position: relative;  */
     }
 
     .MeerkatSummary {
         width: 88%;
-        /* margin-right: 0.5rem; */
+        margin-right: 0.5rem;
         justify-self: center;
     }
 
     .MeerkatCoverImage {
+        /* Need to scale or shrink this image  */
         padding-top: 1rem;
-        max-width: 595px;  
+        max-width: 595px;
+        display: flex;    
+        margin: auto; 
+        border: 2px solid red;
         /* justify-self: center;
         padding-top: 0px;
         padding-bottom: 0px; */
@@ -1165,12 +1165,13 @@ form {
     .MeerkatSummary, .MeerkatCoverImage {
         width: 88%;
         padding-bottom: 2rem;
-        /* margin-left: 0.5rem;
-        margin-right: 0.5rem; */
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     .MeerkatCoverImage img {
         width: 100%;
+        margin: auto;
     }
 
 
@@ -1180,9 +1181,7 @@ form {
 
     /* CONNECT section */
     #connect { 
-        padding-bottom: 3rem;
-        padding-left: 1%;
-        padding-right: 1%;
+        padding-bottom: 4rem;
     }
 
     .formSection {
@@ -1209,8 +1208,8 @@ form {
 
     .footerh1 {
         text-align: center;
-        /* padding-top: 2rem;
-        margin-top: 2rem; */
+        padding-top: 2rem;
+        margin-top: 2rem;
     }
 
     .connectIcons {
@@ -1221,16 +1220,10 @@ form {
         margin-top: 1rem;
         margin-bottom: 1rem;
         text-align: center;
-        border: 2px solid red;
-        display: flex;
-        flex-direction: column;
     }
 
-/* How do I center this button?  */
     .footer button {
         text-align: center;
-        border: 2px solid red;
-        justify-self: center;
     }
 
     #footerText {
