@@ -11,13 +11,19 @@ function myFunction() {
   } else {
     header.classList.remove("sticky");
   }
-}
+};
 
 
 
 // HERO animation effects. 1 Hero default state > 2 Logo shifts from top left to top center of hero frame
 //    > 3  Hero Copy #heroCopy drops down over top left frame as a overlay 
 //    > 4  Final hero state is shown
+
+
+
+
+
+
 
 
 
@@ -64,6 +70,73 @@ window.open(url, "_blank");
 
 
 
+
+
+// On hover, PLAYGROUND img's will change and fade out 
+
+// $("#IlleniumMain").hover(function() {
+//     $(this).addClass("#hoverIllenium");
+//     }, function() {
+//     $(this).removeClass("#IlleniumMain");
+//     }
+// );
+
+// $("#IlleniumMain").mouseenter(handlerIn).mouseleave(handlerOut); 
+
+
+
+// $("#IlleniumMain").hover(function() {
+//     $(this).add("#hoverIllenium");
+//     }, function() {
+//     $(this).remove("#IlleniumMain");
+//     }
+// );
+
+// $("#hoverIllenium").mouseleave(function) {
+//     $(this).add("#IlleniumMain");
+//     }, function() {
+//     $(this).remove("#hoverIllenium");  
+//     }
+// );
+
+
+
+
+// var handlerIn = document.getElementById("#IlleniumMain");
+
+// // Get the button that opens the modal
+// var handlerOut = document.getElementById("#hoverIllenium");
+
+// $("#IlleniumMain").mouseenter(handlerIn).mouseleave(handlerOut); 
+
+
+
+// Why aren't any of these working? 
+// $("#IlleniumMain").mouseover(function() {
+//         this.src="/images/images/playgroundImages/IlleniumPurpleLogo.png"
+//     }).mouseout(function() {
+//          this.src="images/playgroundImages/IlleniumStage.png"
+// });
+  
+
+
+// $(function() {
+//     $("#IlleniumMain").hover(function() {
+//         $(this).attr('src', '../images/playgroundImages/IlleniumPurpleLogo.png');
+//     }, 
+//     function() {
+//         $(this).attr('src', '../images/playgroundImages/IlleniumStage.png');
+//     }) 
+// });
+
+
+
+
+
+
+
+
+
 // MODAL when  you click Submit button in the CONNECT section of my homepage 
 // Get the modal 
 var modal = document.getElementById("modalConnect");
@@ -90,7 +163,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 
 

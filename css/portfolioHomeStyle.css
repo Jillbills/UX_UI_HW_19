@@ -22,7 +22,7 @@ h2 {
     font-weight: 700;
     line-height: 68px;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     margin-block-end: 0;
     margin-block-start: 0;
 }
@@ -285,7 +285,7 @@ a {
         transform: translateY(0);
       }
       40% {
-        transform: translateY(-40px);
+        transform: translateY(-50px);
       }
       60% {
         transform: translateY(-25px);
@@ -297,7 +297,8 @@ a {
 /* ABOUT Section */
 #about {
     background-color: #000000;
-    padding-top: 5rem;
+    /* padding-top: 5rem;  */
+    padding-top: 8rem;
     margin-inline-end: 0;
     margin-block-start: 0;
     
@@ -321,6 +322,8 @@ a {
     width: 66%;
     margin-left: 17%;
     margin-right: 17%;
+    padding-top: 4rem;
+    padding-bottom: 8rem; 
 }
 
 .aboutCopy button {
@@ -333,7 +336,7 @@ a {
 }
 
 .myEntrepreneurVenture {
-    padding-bottom: 2rem;
+    padding-bottom: 8rem; 
 }
 
 .ventureContainer {
@@ -450,7 +453,7 @@ Color for modal BG is #F27224  */
 
 
 .myPlayground {
-    padding-bottom: 4rem;
+    padding-bottom: 8rem; 
 }
 
 /* v1 grid coding */
@@ -543,6 +546,17 @@ Color for modal BG is #F27224  */
     margin-right: 2%;
 }
 
+#hoverIllenium, #hoverLantern, #hoverKauai, #hoverPainting {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* #IlleniumMain:hover {
+    background-image: url("/images/playgroundImages/IlleniumPurpleLogo.png");
+} */
+
+
 
 
 /* v3 test this grid code for playground images  */
@@ -587,10 +601,10 @@ Color for modal BG is #F27224  */
 
 
 .designSkills {
-    padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
     width: 80%;
+    padding-bottom: 8rem;
 }
 
 #UXskillsImg {
@@ -599,19 +613,21 @@ Color for modal BG is #F27224  */
 }
 
 .designTools {
-    padding-bottom: 8rem; 
+    padding-bottom: 4rem; 
 }
 
 .designToolsIcons {
     margin-right: 2rem;
+    padding-bottom: 8rem; 
 }
 
 
 /* WORK Section */
 #work {
     /* background-color: #F1F0F4; */
-    background-color: #171717;
-    padding-top: 5rem;
+    background-color: #202023;
+    /* padding-top: 5rem;  */
+    padding-top: 8rem;
     padding-bottom: 8rem;
 }
 
@@ -621,8 +637,8 @@ Color for modal BG is #F27224  */
     justify-content: space-between;
     margin-right: 3%;
     margin-left: 3%;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .educateYaPrototype {
@@ -647,8 +663,8 @@ Color for modal BG is #F27224  */
     justify-content: space-between;
     margin-right: 3%;
     margin-left: 3%;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .USdeptOfEducationSummary {
@@ -673,7 +689,7 @@ Color for modal BG is #F27224  */
     justify-content: space-between;
     margin-right: 3%;
     margin-left: 3%;
-    padding-top: 4rem;
+    padding-top: 8rem;
     padding-bottom: 4rem;
 }
 
@@ -699,7 +715,8 @@ Color for modal BG is #F27224  */
 #connect{
     /* background-color: #F1F0F4;  */
     background-color: #000000;
-    padding-top: 5rem;
+    /* padding-top: 5rem;  */
+    padding-top: 8rem;
     /* padding-bottom: 8rem;  */
     padding-bottom: 4rem;
 }
@@ -708,12 +725,12 @@ Color for modal BG is #F27224  */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 
 form {
     margin-left: 8rem;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
 }
 
 .connectGIF {
@@ -722,6 +739,7 @@ form {
     /* justify-content: center; */
     margin-left: 1rem;
     margin-right: 1rem;
+    padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
@@ -836,10 +854,10 @@ form {
     color: #F1F0F4;
     text-align: left;
     /* line-height: 16px; */
-    padding-top: 3.5rem;
-    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-left: 10%;
     margin-top: 3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     margin-block-end: 0;
     margin-block-start: 0;
 }
