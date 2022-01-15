@@ -189,9 +189,11 @@ button:hover {
     margin-left: 2rem;
 }
 
-
+/* 
 .heroLogo {
-
+    z-index: 1;
+    padding-top: -20%;
+    border: 2px solid red;
 }
 
 .heroLogo.animate {
@@ -201,18 +203,18 @@ button:hover {
 
 @keyframes slide {
     0% {
-        transform: translateX(25%);
+        transform: translateX(0);
       }
       40% {
-        transform: translateX(40%);
+        transform: translateX(25%);
       }
       60% {
-        transform: translateX(-25px);
-      } 
-      80% {
         transform: translateX(40%);
       } 
-}
+      80% {
+        transform: translateX(50%);
+      } 
+} */
 
 
 
@@ -529,6 +531,7 @@ Color for modal BG is #F27224  */
     width: 96%;
     margin-left: 3%;
     margin-right: 0%;
+    background-repeat: no-repeat;
 }
 
 .familyPhoto:hover {
@@ -536,11 +539,19 @@ Color for modal BG is #F27224  */
     height: 100%;
 }
 
-
-#thomasPic {
-    width: 96%;
+.thomasPhoto {
+    background-image: url("../images/playgroundImages/playgroundThomas.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    /* width: 96%;
     margin-left: 2%;
-    margin-right: 2%;
+    margin-right: 2%; */
+}
+
+.thomasPhoto:hover {
+    background-image: url("../images/playgroundImages/ShinobiPainting.png");
+    height: 100%;
+    background-repeat: no-repeat;
 }
 
 .col03topRow:hover {
@@ -601,6 +612,8 @@ Trick was to be sure that I am using the ../images to follow the correct file st
 .Illenium {
     background-image: url("../images/playgroundImages/IlleniumStage.png"); 
     height: 100%;
+    background-repeat: no-repeat;
+    /* transition-timing-function: ease-in-out 5s; */
 }
 
 .Illenium:hover {
@@ -611,6 +624,7 @@ Trick was to be sure that I am using the ../images to follow the correct file st
 .lanternFestivalPic {
     background-image: url("../images/playgroundImages/lanternFestivalNight.png"); 
     height: 100%;
+    background-repeat: no-repeat;
 }
 
 .lanternFestivalPic:hover {
@@ -621,6 +635,7 @@ Trick was to be sure that I am using the ../images to follow the correct file st
 .beachPic {
     background-image: url("../images/playgroundImages/KauaiBeach.png"); 
     height: 100%;
+    background-repeat: no-repeat;
 }
 
 .beachPic:hover {
