@@ -1,6 +1,6 @@
 /* TEXT/FONT/COPY Styles */
 h1 {
-    color: #333B7E;
+    color: #7C7DCB;
     font-family: 'Oswald', sans-serif;
     /* original font size was 76px  */
     font-size: 108px;
@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-    color: #4C5064;
+    color: #B0B3C3;
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
     /* Original was font-weight: 800;  */
@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-    color: #4C5064;
+    color: #B0B3C3;
     font-family: 'Raleway', sans-serif;
     font-size: 48px;
     font-weight: 600;
@@ -47,7 +47,7 @@ h4 {
 }
 
 h6 {
-    color: #6667AB;
+    color: #7C7DCB;
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -58,6 +58,7 @@ h6 {
 }
 
 p {
+    color: #F1F0F4;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -69,7 +70,7 @@ p {
 }
 
 .header3 {
-    color: #4C5064;
+    color: #B0B3C3;
     font-family: 'Raleway', sans-serif;
     font-size: 48px;
     font-weight: 600;
@@ -77,7 +78,7 @@ p {
 }
 
 .header4 {
-    color: #6667AB;
+    color: #7C7DCB;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: 600;
@@ -86,11 +87,11 @@ p {
 }
 
 strong {
-    color: #6667AB;
+    color: #7C7DCB;
 }
 
 .formText {
-    color: #4C5064;
+    color: #B0B3C3;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -133,9 +134,9 @@ strong {
 
 /* BUTTON/ASSETS STYLES */
 button {
-    border: 3px solid #6667AB;
+    border: 3px solid #7C7DCB;
     border-radius: 4px;
-    color: #6667AB;
+    color: #7C7DCB;
     box-sizing: border-box;
     background-color: transparent;
     font-style: 'Inter', sans-serif;
@@ -153,9 +154,9 @@ button {
 }
 
 button:hover {
-    background-color: #6667AB;
+    background-color: #7C7DCB;
     color: #F1F0F4;
-    border: 3px solid #6667AB;
+    border: 3px solid #7C7DCB;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
@@ -189,7 +190,7 @@ button:hover {
 }
 
 .header {
-    background-color: white;
+    background-color: #000000;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -213,10 +214,12 @@ button:hover {
 
 .navLinks {
     display: inline;
-    color: #333B7E;
+    /* color: #333B7E;  */
+    /* color: #7C7DCB;  */
+    color: #FFFFFF;
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.75rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     vertical-align: middle; 
@@ -258,16 +261,11 @@ a {
 
 /* HERO Section */
 .heroContent {
-    background-color: #6667AB;
+    background-color: #000000;
 }
 
 .heroImg {
-    background-color: #6667AB;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    /* width: 100%;  */
-    transform: scale(0.80);
+    width: 100%; 
 }
 
 .hero{
@@ -277,9 +275,9 @@ a {
 .scrollIcon {
     display: flex;
     justify-content: center;
-    padding-top: 12rem;
-    padding-bottom: 6rem;
-    animation: bounce 2s 5;
+    /* padding-bottom: 1%; */
+    z-index: 1;
+    animation: bounce 2s 15;
 }
 
 @keyframes bounce {
@@ -287,10 +285,10 @@ a {
         transform: translateY(0);
       }
       40% {
-        transform: translateY(-30px);
+        transform: translateY(-40px);
       }
       60% {
-        transform: translateY(-15px);
+        transform: translateY(-25px);
       } 
 }
 
@@ -298,7 +296,7 @@ a {
 
 /* ABOUT Section */
 #about {
-    background-color: #F1F0F4;
+    background-color: #000000;
     padding-top: 5rem;
     margin-inline-end: 0;
     margin-block-start: 0;
@@ -306,19 +304,22 @@ a {
 }
 
 .aboutContainer {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
-.profilePic {
+/* .profilePic {
     flex-shrink: 1;
-    padding: 3rem;
-}
+    padding: 3rem; 
+}                       Placeholder profilePic removed */
 
 .aboutCopy {
-    flex-grow: 1;
-    padding: 3rem;
+    /* flex-grow: 1; */
+    /* padding: 3rem; */
+    width: 66%;
+    margin-left: 17%;
+    margin-right: 17%;
 }
 
 .aboutCopy button {
@@ -490,6 +491,7 @@ Color for modal BG is #F27224  */
     list-style-type: none;
 } */
 .hobbiesList {
+    color: #F1F0F4;
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
@@ -590,6 +592,7 @@ Color for modal BG is #F27224  */
 /* WORK Section */
 #work {
     /* background-color: #F1F0F4; */
+    background-color: #171717;
     padding-top: 5rem;
     padding-bottom: 8rem;
 }
@@ -659,7 +662,8 @@ Color for modal BG is #F27224  */
 
 /* CONNECT Section */
 #connect{
-    background-color: #F1F0F4;
+    /* background-color: #F1F0F4;  */
+    background-color: #000000;
     padding-top: 5rem;
     padding-bottom: 8rem;
 }
@@ -763,7 +767,8 @@ form {
 
 /* FOOTER Styles */
 .footer {
-    background-color: #6667AB;
+    /* background-color: #7C7DCB; */
+    background-color: #000000; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 1rem;
@@ -852,13 +857,14 @@ form {
     border-radius: 4px;
     color: #ECE5BA;
     box-sizing: border-box;
-    background-color: #6667AB;
+    /* background-color: #7C7DCB;  */
+    background-color: #000000; 
     margin-top: 1rem;
 }
 
 .footer button:hover {
     background: #F1F0F4;
-    color: #6667AB;
+    color: #7C7DCB;
     border-color: #F1F0F4;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -918,20 +924,6 @@ form {
 
 
     /* ABOUT section  */
-    .aboutContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .profilePic {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    /* How to center image?  */
-        justify-content: center;
-        flex-grow: 1;
-    }
-
 
     /* ABOUT Entrepreneur Venture */
     /* .myEntrepreneurVenture {
@@ -1115,7 +1107,8 @@ How do I shrink this img? flex-shrink doesn't appear to be working */
         justify-content: center;
         align-items: center;
         border: 2px solid red;
-        margin: auto;
+        margin: 0 auto;
+        /* position: relative;  */
     }
 
     .MeerkatSummary {
@@ -1131,9 +1124,12 @@ How do I shrink this img? flex-shrink doesn't appear to be working */
         display: flex;    
         margin: auto; 
         border: 2px solid red;
-        justify-self: center;
+        /* justify-self: center;
         padding-top: 0px;
-        padding-bottom: 0px;
+        padding-bottom: 0px; */
+        /* position: absolute;
+        left: 50%;
+        transform: translateX(-50%); */
     }
 
     .MeerkatSummary, .MeerkatCoverImage {

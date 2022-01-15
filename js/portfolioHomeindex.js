@@ -1,5 +1,5 @@
 
-// STICKY HEADER feature - shows hero first, then scroll to stick header.
+// STICKY HEADER feature - shows hero img first, then scroll to stick header.
 window.onscroll = function() {myFunction()};
     
 var header = document.getElementById("myHeader");
@@ -13,6 +13,23 @@ function myFunction() {
   }
 }
 
+
+
+// HERO animation effects. 1 Hero default state > 2 Logo shifts from top left to top center of hero frame
+//    > 3  Hero Copy #heroCopy drops down over top left frame as a overlay 
+//    > 4  Final hero state is shown
+
+
+
+
+
+
+
+
+
+
+// Opens StickOutLoud website URL in a new tab when clicking a button 
+window.open(url, "_blank");
 
 
 
@@ -47,9 +64,7 @@ function myFunction() {
 
 
 
-
-
-// MODAL when  you click Submit button in the Connect section of my homepage 
+// MODAL when  you click Submit button in the CONNECT section of my homepage 
 // Get the modal 
 var modal = document.getElementById("modalConnect");
 
@@ -79,5 +94,4 @@ window.onclick = function(event) {
 
 
 
-// Open URL in a new tab when clicking a button 
-window.open(url, "_blank");
+
