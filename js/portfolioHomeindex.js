@@ -1,8 +1,19 @@
+// HERO animation effects. 1 Hero default state > 2 Logo shifts from top left to top center of hero frame
+//    > 3  Hero Copy #heroCopy drops down over top left frame as a overlay 
+//    > 4  Final hero state is shown
 
 // ANIMATE logo on hero image 
 $(document).ready(function() {
     $(".heroLogo").addClass("animate");
 });
+
+
+// ANIMATE hero copy over hero image 
+$(document).ready(function() {
+    $(".heroCopy").addClass("animate");
+});
+
+
 
 
 
@@ -22,9 +33,7 @@ function myFunction() {
 
 
 
-// HERO animation effects. 1 Hero default state > 2 Logo shifts from top left to top center of hero frame
-//    > 3  Hero Copy #heroCopy drops down over top left frame as a overlay 
-//    > 4  Final hero state is shown
+
 
 
 

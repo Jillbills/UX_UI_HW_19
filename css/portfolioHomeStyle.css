@@ -181,12 +181,87 @@ button:hover {
 
 
 /* HERO Section */
+
+
+/* 
+.heroCopy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden; 
+}
+
+.heroCopy.animate {
+    animation: dropin 1s ease-in;
+    animation-direction: normal;
+}
+
+@keyframes dropin {
+    0% {
+        transform: translateY(-50%);
+      }
+    50% {
+        transform: translateY(0%);
+      } 
+    100% {
+        transform: translateY(20%);
+      } 
+}  */
+
+
+
+
+
+
+
+
+
+
+
+/* overflow property doesn't appear to be doing anything yet, but
+visibility: hidden; works to hide the div */
+/* .heroLogo {
+    width: 296px;
+    z-index: 1;
+    position: absolute;
+    top: 12.18%;
+    left: 7.95%;
+    border: 2px solid red;
+    overflow: hidden; 
+    visibility: hidden; 
+} */
+
+/* .heroLogo.animate {
+    animation: slidein 1s ease-in;
+    animation-direction: normal;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(0%);
+      }
+    /* 50% {
+        transform: translateX(90%);
+      } 
+    100% {
+        transform: translateX(150%);
+      } 
+} */
+
+
+
+
+
+
+
 .heroContent {
     background-color: #000000;
 }
 
 .heroImg {
     width: 100%; 
+    /* border: 2px solid red; */
 }
 
 .hero{
@@ -221,35 +296,6 @@ button:hover {
 .logo {
     margin-left: 2rem;
 }
-
-/* 
-.heroLogo {
-    z-index: 1;
-    padding-top: -20%;
-    border: 2px solid red;
-}
-
-.heroLogo.animate {
-    animation: slide 2s ease-in-out;
-    animation-direction: forwards;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-      }
-      40% {
-        transform: translateX(25%);
-      }
-      60% {
-        transform: translateX(40%);
-      } 
-      80% {
-        transform: translateX(50%);
-      } 
-} */
-
-
 
 .header {
     background-color: #000000;
