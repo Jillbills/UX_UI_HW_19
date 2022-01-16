@@ -146,6 +146,7 @@ button {
     text-align: center;
     padding: 0.5rem 2rem;
     margin-right: 1rem;
+    /* transition: background-color 0.5s ease-in-out;   */
     /* Use these properties below??? */
     /* display: flex;
     flex-direction: row;
@@ -167,6 +168,7 @@ button:hover {
     text-align: center;
     padding: 0.5rem 2rem;
     margin-right: 1rem;
+    /* transition: background-color 0.5s ease-in-out;   */
     /* Use these properties below??? */
     /* display: flex;
     flex-direction: row;
@@ -307,6 +309,7 @@ a {
     /* padding-bottom: 1%; */
     z-index: 1;
     animation: bounce 2s infinite;
+    animation-delay: 3s;
 }
 
 @keyframes bounce {
@@ -532,6 +535,7 @@ Color for modal BG is #F27224  */
     margin-left: 3%;
     margin-right: 0%;
     background-repeat: no-repeat;
+    transition: background-image 2s ease-in-out;
 }
 
 .familyPhoto:hover {
@@ -543,6 +547,7 @@ Color for modal BG is #F27224  */
     background-image: url("../images/playgroundImages/playgroundThomas.png");
     height: 100%;
     background-repeat: no-repeat;
+    transition: background-image 2s ease-in-out;
     /* width: 96%;
     margin-left: 2%;
     margin-right: 2%; */
@@ -613,7 +618,7 @@ Trick was to be sure that I am using the ../images to follow the correct file st
     background-image: url("../images/playgroundImages/IlleniumStage.png"); 
     height: 100%;
     background-repeat: no-repeat;
-    /* transition-timing-function: ease-in-out 5s; */
+    transition: background-image 2s ease-in-out;
 }
 
 .Illenium:hover {
@@ -625,6 +630,7 @@ Trick was to be sure that I am using the ../images to follow the correct file st
     background-image: url("../images/playgroundImages/lanternFestivalNight.png"); 
     height: 100%;
     background-repeat: no-repeat;
+    transition: background-image 2s ease-in-out;
 }
 
 .lanternFestivalPic:hover {
@@ -636,6 +642,7 @@ Trick was to be sure that I am using the ../images to follow the correct file st
     background-image: url("../images/playgroundImages/KauaiBeach.png"); 
     height: 100%;
     background-repeat: no-repeat;
+    transition: background-image 2s ease-in-out;
 }
 
 .beachPic:hover {
@@ -648,6 +655,7 @@ Trick was to be sure that I am using the ../images to follow the correct file st
     /* height: 100%; */
     height: 300px;  
     background-repeat: no-repeat;
+    transition: background-image 2s ease-in-out;
 }
 
 .wcPainting:hover {
@@ -1141,7 +1149,8 @@ form {
     .row1 {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;  
+        border: 2px solid red;      
     }
 
     .col02topRow {
@@ -1169,12 +1178,13 @@ form {
         border: 2px solid red;
     } */
 
-    #IlleniumMain, #lanternFestivalNight, #KauaiBeach, #ladyPainting {
+    .Illenium, .lanternFestivalPic, .beachPic, .wcPainting {
         border: 2px solid red;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
     }
+
 
 
 
