@@ -327,6 +327,13 @@ a {
     text-decoration: none;
 }
 
+.navLinks:hover {
+    text-decoration: underline;
+    text-decoration-color: #7C7DCB;
+    text-decoration-thickness: 4px;
+    text-underline-position: under;
+}
+
 
 
 /*STICKY HEADER styling */
@@ -817,122 +824,6 @@ Trick was to be sure that I am using the ../images to follow the correct file st
 }
 
 
-/* CONNECT Section Contact FORM */
-#connect{
-    /* background-color: #F1F0F4;  */
-    background-color: #000000;
-    /* padding-top: 5rem;  */
-    padding-top: 8rem;
-    /* padding-bottom: 8rem;  */
-    padding-bottom: 4rem;
-}
-
-.formSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 4rem;
-}
-
-form {
-    margin-left: 8rem;
-    padding-bottom: 12rem;
-}
-
-.connectGIF {
-    /* display: flex; */
-    align-items: flex-start;
-    /* justify-content: center; */
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-#connectButton {
-    cursor: pointer;
-}
-
-
-
-/* My custom modal - The background */
-.modal {
-    display: none;  /* hidden by default */
-    position: fixed;
-    z-index: 1;
-    padding-top: 8rem;   /* modal location */
-    /* How do I make this modal center responsively to any screen size?  */
-    width: 100%; 
-    height: 20%; 
-    left: 8%;
-    right: 8%; 
-    top: 25%; 
-    transform: (-50%, -50%);
-    overflow: auto;     /* enables scroll if needed */
-    background-color: rgb(0, 0, 0);  /* fallback color */
-    background-color: rgba(0, 0, 0, 0.4);  /* black BG with opacity */
-    /* vertical-align: bottom; */
-    text-align: center;
-    margin: auto;
-}
-
-/* My custom modal - The modal content dialog */
-#modalConnect {
-    /* display: block;  Leave this out because it disrupts the code - is in conflict with class of modal display: none */ 
-    background-color: #392F80;
-    border-radius: 6px;
-    margin: auto;
-    padding: 4rem;
-    width: 60%;
-    align-items: center; 
-    vertical-align: middle;
-}
-
-.h3modal {
-    color: whitesmoke;
-    font-family: 'Raleway', sans-serif;
-    font-size: 48px;
-    font-weight: 600;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    text-align: center;
-}
-
-.pModal {
-    color: whitesmoke;
-    font-family: 'Raleway', sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 40px;
-    letter-spacing: -2%;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    text-align: center;
-}
-
-/* The Close button is an X coded as &times; */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 48px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: whitesmoke;
-    text-decoration: none;
-    cursor: pointer; 
-}
-
-
-
-/* Bootstrap modal with custom styling on it  */
-
-
-
-
-
 
 
 
@@ -1004,6 +895,10 @@ form {
 .emailText {
     color: #F1F0F4;
     padding-left: 2rem;
+}
+
+.emailText:hover {
+    color: #7C7DCB;
 }
 
 .LinkedInWithIcon {

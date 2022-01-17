@@ -73,13 +73,15 @@
 <!-- Sticky Header with topNav -->
 <header class="header" id="myHeader">
     <!-- Original logo width="150px" height="75px"  -->
-    <img class="logo" src="images/LogoJVanRoundDark.svg" alt="Jill Van's logo">
+    <a href="./portfolioHomeIndex.html"><img class="logo" src="images/LogoJVanRoundDark.svg" alt="Jill Van's logo"></a>
     <div class="topNav">
         <nav class="inline">
             <ul>
                 <a href="#about"><li class="navLinks">About</li></a>
                 <a href="#work"><li class="navLinks">Work</li></a>
-                <a href="#connect"><li class="navLinks">Connect</li></a>
+                <a href="./indexForm.html"><li class="navLinks" id="navConnect">Connect</li></a>
+                <!-- ??? How do I link to my other webpage within this same folder???
+                <a href="indexForm.asp"><li class="navLinks">Connect</li></a> -->
             </ul>
             <br>
         </nav>
@@ -263,61 +265,9 @@
                 <button type="button">View Project</button>    
             </div>
         </div>
-
     </section>
 
 
-
-<!--CONNECT Section-->
-    <section id="connect">
-        <h1>Let's Connect</h1>
-        <!--Check out the form action tutorial - where will the form take you?-->
-        <div class="formSection"> 
-            <form action="/desktopConnectionConfirmation.php">
-                <label for="name" class="formText" size="50px" c>Name*</label><br>
-                <input type="text" class="formText" id="name" name="name" placeholder="Enter your preferred name" size="40"><br>
-                <label for="required" class="formText">*Required</label><br><br>
-                <label for="emailAddress" class="formText">Email address*</label><br>
-                <input type="text" class="formText" id="emailAddress" name="emailAddress" placeholder="Type email address" size="40"><br>
-                <label for="required" class="formText">*Required</label><br><br>
-                <label for="phoneNumber" class="formText">Phone number</label><br>
-                <input type="phoneNumber" class="formText" id="phoneNumber" name="phoneNumber" placeholder="(xxx) xxx - xxxx" size="40"><br>
-                <label for="optional" class="formText">Optional</label><br><br>
-                <label for="mayItext" class="formText">May I text you at this number?</label><br>
-                    <input type="radio" class="formText" name="yesorno" value="yes"><span class="formText">Yes</span><br>
-
-                    <input type="radio" class="formText" name="yesorno" value="no"><span class="formText">No</span><br><br>
-                <label for="messageBox" class="formText">Message*</label><br>
-                <textarea id="messageBox" class="formText" name="messageBox" rows="10" cols="50" placeholder="Your message"></textarea><br>
-                <!-- </div><br> -->
-                <label for="messageBoxNote" class="formText">I'll never share your email with anyone else</label><br><br>
-                <button id="connectButton" type="button">Submit</button>
-            </form>
-            <div class="connectGIF">
-                <iframe src="https://giphy.com/embed/KEHi4pArjMWOSnpQfh" width="480" height="356" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/RosannaPansino-ro-rosanna-pansnio-KEHi4pArjMWOSnpQfh"></a></p>
-            </div>
-        </div>
-
-
-        <!-- The modal content is #modalConnect -->
-        <div id="modalConnect" class="modal">
-            <span class="close">&times;</span>
-            <h3 class="h3modal">Thank You!</h3>
-            <p class="pModal">I'll be in touch with you soon.</p>
-        </div> 
-
-
-
-
-
-
-
-
-
-
-
-        <hr>
-    </section>
 
 
 
@@ -331,8 +281,8 @@
 
         <div class="connectIcons">
             <div class="emailWithIcon">
-                <img src="./images/emailIcon.png" alt="email icon" width="60px" height="42px">
-                <h6 class="footerh6 emailText">Email</h6>
+                <a href="./indexForm.html"><img src="./images/emailIcon.png" alt="email icon" width="60px" height="42px"></a>
+                <a href="./indexForm.html"><h6 class="footerh6 emailText">Email</h6></a>
             </div>
 
             <div class="LinkedInWithIcon">

@@ -33,13 +33,15 @@
 <!-- Sticky Header with topNav -->
 <header class="header" id="myHeader">
     <!-- Original logo width="150px" height="75px"  -->
-    <img class="logo" src="images/LogoJVanRoundDark.svg" alt="Jill Van's logo">
+    <!-- <img class="logo" src="images/LogoJVanRoundDark.svg" alt="Jill Van's logo">  -->
+    <a href="./portfolioHomeIndex.html"><img class="logo" src="images/LogoJVanRoundDark.svg" alt="Jill Van's logo"></a>
     <div class="topNav">
         <nav class="inline">
             <ul>
                 <a href="#about"><li class="navLinks">About</li></a>
                 <a href="#work"><li class="navLinks">Work</li></a>
-                <a href="#connect"><li class="navLinks">Connect</li></a>
+                <!-- <a href="#connect"><li class="navLinks">Connect</li></a>  -->
+                <li class="navLinks" id="navConnect">Connect</li>
             </ul>
             <br>
         </nav>
@@ -50,7 +52,7 @@
 
 <div class="content">
 <!--CONNECT Section-->
-<section id="connect">
+<section id="connectContent">
     <h1>Let's Connect</h1>
     <!--Check out the form action tutorial - where will the form take you?-->
     <div class="formSection"> 
@@ -77,7 +79,7 @@
     </div>
 
 
-    <!-- The modal content is #modalConnect -->
+    <!-- The modal content is #modalConnect This modal confirms submission of the form.-->
     <div id="modalConnect" class="modal">
         <span class="close">&times;</span>
         <h3 class="h3modal">Thank You!</h3>
@@ -103,8 +105,8 @@
 
         <div class="connectIcons">
             <div class="emailWithIcon">
-                <img src="./images/emailIcon.png" alt="email icon" width="60px" height="42px">
-                <h6 class="footerh6 emailText">Email</h6>
+                <a href="#connectContent"><img src="./images/emailIcon.png" alt="email icon" width="60px" height="42px"></a>
+                <a href="#connectContent"><h6 class="footerh6 emailText">Email</h6></a>
             </div>
 
             <div class="LinkedInWithIcon">
