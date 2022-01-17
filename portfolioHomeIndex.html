@@ -49,14 +49,16 @@
 
 <!--HERO Section-->
     <section class="heroContent">
+        <!-- Animated elements still in the works  -->
         <!-- <div class="heroLogo">
-            <img src="./images/LogoJVanRoundDark.svg" alt="Hi! I'm Jill Van hero image">
-        </div>
-        <div class="heroCopy">
-            <img src="./images/Hero/HeroOverlayCopy.png" 
-            width="515px" height="325px">
+            <img id="animateLogo" src="./images/LogoJVanRoundDark.svg" alt="Hi! I'm Jill Van hero image">
         </div> -->
+        <!-- <div class="heroCopy">
+            <img src="./images/Hero/HeroOverlayCopy.png" 
+            width="500px" height="325px">
+        </div>  -->
 
+        <!-- Static elements  -->
         <div class="heroImg">
             <img src="./images/Hero/HeroDefault.png" class="hero" alt="Hi! I'm Jill Van. Here's my hero image">
         </div>
@@ -70,7 +72,8 @@
 
 <!-- Sticky Header with topNav -->
 <header class="header" id="myHeader">
-    <img class="logo" src="images/LogoJVanRoundDark.svg" alt="Jill Van's logo" width="150px" height="75px">
+    <!-- Original logo width="150px" height="75px"  -->
+    <img class="logo" src="images/LogoJVanRoundDark.svg" alt="Jill Van's logo">
     <div class="topNav">
         <nav class="inline">
             <ul>
@@ -112,22 +115,37 @@
             <div class="ventureContainer">
                 <div class="solImagery">
                     <img id="SOLdecalImg" src="./images/SOLdecals.png" alt="Stick Out Loud decals">  <!-- width="640px" height="226px" -->
-                    <!-- Opens StickOutLoud website URL in a new tab when clicking this button -->
-                    <button id="SOLbutton" type="button" onclick="window.open('http://stickoutloud.com/')" target="_blank" rel="noopener noreferrer">Explore</button>
+                    <!-- Opens StickOutLoud website URL in a new tab when clicking this button (no modal) -->
+                    <!-- <button id="SOLbutton" type="button" onclick="window.open('http://stickoutloud.com/')" target="_blank" rel="noopener noreferrer">Explore</button>  -->
+                    <button id="SOLbutton" type="button" data-toggle="modal" data-target="#SOLmodal2">Explore</button>
                 </div>
                 <div class="solCopy">
                     <img id="etsyHeader" src="./images/SOLonEtsy.png" alt="Stick Out Loud Custom vinyl decals on Etsy" width="397px" height="92px"><br>
                     <p>Our mission is to provide a means for others to express themselves, evoke conversation, and inspire positivity in our community as our decals help unite people with common interests. We love adventure and how exploring the PNW helps us achieve mental clarity. Together let's turn Sorry Outta Luck into Stick Out Loud (SOL) and feed it a positive soul!</p>
                 </div>
             </div>
-        <!-- The modal content is #modalSOL. This modal warns user that they will be taken off site when they click the Explore button -->
-            <!-- <div id="modalSOL" class="modal">
-                <span class="close">&times;</span>
-                <h3 class="h3modal">Warning:</h3>
-                <p class="pModal">You're about to encounter
-                    <br>some fabulous decals offsite. 
-                    <br>Hope to see you again soon!</p>
-            </div> -->
+
+            <!-- Modal warning user that they will be taken offsite. Includes button to link to other website in new tab or close modal to return to homepage.  -->
+            <div class="modal fade" id="SOLmodal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalCenterTitleSOL">Warning:</h5>
+                      <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button> -->
+                    </div>
+                    <div class="SOLmodal-body">
+                        <p>You’re about to encounter fabulous decals offsite.<br>
+                        Hope to see you again soon!</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" onclick="window.open('http://stickoutloud.com/')" target="_blank" rel="noopener noreferrer">Check it out</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
             
 
@@ -179,7 +197,7 @@
         <div class="designSkills">
             <h2 class="h2L">Design Skills</h2>
             <!-- original width="1024px" height="457px" -->
-            <img id="UXskillsImg" src="./images/UXdesignSkillsWordCloud.png" alt="UX design skills word cloud"> 
+            <img id="UXskillsImg" src="./images/UXdesignSkillsWordCloudDark.png" alt="UX design skills word cloud"> 
         </div>
 
         <div class="designTools">
@@ -290,33 +308,12 @@
 
 
 
-        
-        
-        <!-- Button triggers Bootstap modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-            Launch demo modal
-        </button>
-        
-        
-        <!-- Bootstrap Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Thank you!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-            </div>
-        </div>
+
+
+
+
+
+
 
 
         <hr>
@@ -335,12 +332,12 @@
         <div class="connectIcons">
             <div class="emailWithIcon">
                 <img src="./images/emailIcon.png" alt="email icon" width="60px" height="42px">
-                <h4 class="emailText">Email</h4>
+                <h6 class="footerh6 emailText">Email</h6>
             </div>
 
             <div class="LinkedInWithIcon">
                 <img src="./images/LinkedInIcon.png" alt="LinkedIn icon" width="60px" height="55px">
-                <h4 class="LinkedInText">LinkedIn</h4>
+                <h6 class="footerh6 LinkedInText">LinkedIn</h6>
             </div>
         </div>
 
@@ -357,6 +354,9 @@
 
 
 
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <!-- Bootstrap JavaScript  -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

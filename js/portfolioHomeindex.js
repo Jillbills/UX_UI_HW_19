@@ -1,22 +1,3 @@
-// HERO animation effects. 1 Hero default state > 2 Logo shifts from top left to top center of hero frame
-//    > 3  Hero Copy #heroCopy drops down over top left frame as a overlay 
-//    > 4  Final hero state is shown
-
-// ANIMATE logo on hero image 
-$(document).ready(function() {
-    $(".heroLogo").addClass("animate");
-});
-
-
-// ANIMATE hero copy over hero image 
-$(document).ready(function() {
-    $(".heroCopy").addClass("animate");
-});
-
-
-
-
-
 // STICKY HEADER feature - shows hero img first, then scroll to stick header.
 window.onscroll = function() {myFunction()};
     
@@ -36,7 +17,28 @@ function myFunction() {
 
 
 
+// HERO animation effects. 1 Hero default state > 2 Logo shifts from top left to top center of hero frame
+//    > 3  Hero Copy #heroCopy drops down over top left frame as a overlay 
+//    > 4  Final hero state is shown
 
+
+// ANIMATE logo on hero image v1 - Works somewhat
+// $(document).ready(function() {
+//     $(".heroLogo").addClass("animate"); 
+// });
+
+
+// ANIMATE logo on hero image v2 from W3schools example - Doesn't work at all yet
+// $(document).ready(function() {
+//     $("#animateLogo").animate({left: '250px'}); 
+// });
+
+
+
+// ANIMATE hero - drop in copy over hero image v1 - Works somewhat
+// $(document).ready(function() {
+//     $(".heroCopy").addClass("animate");
+// });
 
 
 
