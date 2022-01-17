@@ -438,7 +438,7 @@ a {
 
 
 /* v2 Bootstrap based SOL Modal Warning of linking to offsite website when clicking Explore button */
-/* How do I make my bootstrap modal not scrollable?  */
+/* How do I make my bootstrap modal not scrollable?  Currently deactivated*/
 .modal-content {
     background-color: #e65d08;
     border-radius: 6px;
