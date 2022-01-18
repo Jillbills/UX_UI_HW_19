@@ -338,8 +338,8 @@ a {
 .sticky {
     position: fixed;
     top: 0;
-    /* width: 100%;  */
-    width: 98.5%; 
+    /* width: 98.5%; Was testing this over Zoom earlier but 100% seems to work better */
+    width: 100%; 
   }
   
   /* .sticky + .content {
