@@ -1045,8 +1045,7 @@ Trick was to be sure that I am using the ../images to follow the correct file st
     .row1 {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;  
-        border: 2px solid red;      
+        flex-wrap: wrap;      
     }
 
     .col02topRow {
@@ -1065,7 +1064,6 @@ Trick was to be sure that I am using the ../images to follow the correct file st
         display: flex;
         flex-direction: column;
         flex-wrap: wrap; 
-        border: 2px solid red;
     }
 
     /* .col25 {
@@ -1075,7 +1073,6 @@ Trick was to be sure that I am using the ../images to follow the correct file st
     } */
 
     .Illenium, .lanternFestivalPic, .beachPic, .wcPainting {
-        border: 2px solid red;
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
@@ -1251,7 +1248,6 @@ Trick was to be sure that I am using the ../images to follow the correct file st
         margin-top: 1rem;
         margin-bottom: 1rem;
         text-align: center;
-        border: 2px solid red;
         display: flex;
         flex-direction: column;
     }
@@ -1259,7 +1255,6 @@ Trick was to be sure that I am using the ../images to follow the correct file st
 /* How do I center this button?  */
     .footer button {
         text-align: center;
-        border: 2px solid red;
         justify-self: center;
     }
 
