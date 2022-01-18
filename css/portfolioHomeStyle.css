@@ -246,7 +246,6 @@ visibility: hidden; works to hide the div */
 
 .heroImg {
     width: 100%; 
-    /* border: 2px solid red; */
 }
 
 .hero{
@@ -311,7 +310,6 @@ visibility: hidden; works to hide the div */
 
 .navLinks {
     display: inline;
-    /* color: #333B7E;  */
     /* color: #7C7DCB;  */
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
@@ -518,12 +516,6 @@ margin-top: 1rem;
     margin-right: 0px;
 }
 
-/* #familyPhoto {
-    width: 96%;
-    margin-left: 3%;
-    margin-right: 0%;
-} */
-
 .familyPhoto {
     background-image: url("../images/playgroundImages/familyPhoto.png");
     height: 100%;
@@ -590,21 +582,13 @@ margin-top: 1rem;
 
 .col25 {
     /* justify-content: space-evenly;  */
+    /* width: 96%;
+    margin-left: 2%;
+    margin-right: 2%; */
     height: 300px;
 } 
 
-/* 
-#IlleniumMain, #lanternFestivalNight, #KauaiBeach, #ladyPainting {
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
 
-#hoverIllenium, #hoverLantern, #hoverKauai, #hoverPainting {
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
-} */
 
 
 
@@ -661,58 +645,12 @@ Trick was to be sure that I am using the ../images to follow the correct file st
 
 
 
-
-
-
-
-/* v3 test this grid code for playground images  */
-/* #playgroundGrid {
-    display: grid;
-    grid-template-columns: 4fr 5fr 3fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "col01List col02topRow col03topRow"
-        "IlleniumMain lanternFestivalNight KauaiBeach ladyPainting"
-    ;
-}
-
-.col01List {
-    grid-area: col01List;
-}
-
-.col02topRow {
-    grid-area: col02topRow;
-}
-
-.col03topRow {
-    grid-area: col03topRow;
-}
-
-#IlleniumMain {
-    grid-area: IlleniumMain;
-}
-
-#lanternFestivalNight {
-    grid-area: lanternFestivalNight;
-}
-
-#KauaiBeach {
-    grid-area: KauaiBeach;
-}
-
-#ladyPainting {
-    grid-area: ladyPainting;
-} */
-
-
-
 .designSkills {
     display: flex;
     flex-direction: column;
     width: 80%;
     padding-bottom: 8rem;
 }
-
 
 .designToolsIcons {
     text-align: right;
