@@ -13,10 +13,10 @@
 
 <!-- Linking files  -->
     <!-- Bootstrap CSS file  -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
 
     <!-- Original linked file before homepage was renamed <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/portfolioHomeStyle.css">
+    <link rel="stylesheet" href="./css/portfolioHomeStyle.css">
 
 <!--Codes to embed Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,23 +27,6 @@
 
 
 <body>
-<!-- v1 Header with topNav located at top of homepage-->
-    <!-- <header class="header" id="myHeader">
-        <img class="logo" src="images/LogoJVanRound.svg" alt="Jill Van's logo" width="150px" height="75px">
-        <div class="topNav">
-            <nav class="inline">
-                <ul>
-                    <a href="#about"><li class="navLinks">About</li></a>
-                    <a href="#work"><li class="navLinks">Work</li></a>
-                    <a href="#connect"><li class="navLinks">Connect</li></a>
-                </ul>
-                <br>
-            </nav>
-        </div>
-    </header> -->
-
-
-
 <!--HERO Section-->
     <section class="heroContent">
         <!-- Animated elements still in the works  -->
@@ -70,7 +53,7 @@
 <!-- Sticky Header with topNav -->
 <header class="header" id="myHeader">
     <!-- Original logo width="150px" height="75px"  -->
-    <a href="./portfolioHomeIndex.html"><img class="logo" src="images/LogoJVanRoundDark.svg" alt="Jill Van's logo"></a>
+    <a href="index.html"><img class="logo" src="images/LogoJVanRoundDark.svg" alt="Jill Van's logo"></a>
     <div class="topNav">
         <nav class="inline">
             <ul>
@@ -229,7 +212,7 @@
                 <h6>Non-Profit Responsive Website Redesign</h6>
                 <br>
                 <p>Edúcate Ya is a non-profit organization that helps educate Latinos to achieve better jobs and access to healthcare. We redesigned the non-profit organization’s website to be responsive and visually engaging to improve usability, navigation, and user engagement.</p><br>
-                <button type="button">View Project</button>
+                <button type="button" onclick="window.location='casestudyEYdark.html'">View Project</button>
             </div>
         </div>
         <hr>
@@ -268,33 +251,43 @@
 
 
 <!--Footer-->
+    <!-- v2 footer built cleaner with Bootstrap 4 grid system 
+    but somehow code got broken when transferring over...trying to debug -->
     <footer>
-    <section class="footer">
-        <div>
-            <h1 class="footerh1">Let's</h1>
-            <h1 class="footerh1">Connect!</h1>
-        </div>
-
-        <div class="connectIcons">
-            <div class="emailWithIcon">
-                <a href="./indexForm.html"><img src="./images/emailIcon.png" alt="email icon" width="60px" height="42px"></a>
-                <a href="./indexForm.html"><h6 class="footerh6 emailText">Email</h6></a>
+        <div class="container-fluid">
+            <div class="row footerRow">
+                <div class="col-sm-12 col-md-4">
+                    <h1 class="footerh1">Let's 
+                        <br>Connect!</h1>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="connectIcons">
+                        <div class="emailWithIcon">
+                            <a href="./indexForm.html"><img src="./images/emailIcon.png" alt="email icon" width="60px" height="42px"></a>
+                            <a href="./indexForm.html"><h6 class="footerh6 emailText">Email</h6></a>
+                        </div>
+            
+                        <div class="LinkedInWithIcon">
+                            <img src="./images/LinkedInIcon.png" alt="LinkedIn icon" width="60px" height="55px">
+                            <h6 class="footerh6 LinkedInText">LinkedIn</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="footerResume">
+                        <h6 class="footerh6 text-center">Explore my work history</h6>
+                        <button id="buttonResume" type="button">Resume</button>
+                    </div>
+                </div>
             </div>
-
-            <div class="LinkedInWithIcon">
-                <img src="./images/LinkedInIcon.png" alt="LinkedIn icon" width="60px" height="55px">
-                <h6 class="footerh6 LinkedInText">LinkedIn</h6>
+            <div class="row copyrightRow">
+                <p id="footerText"> &copy Copyright 2022 - Designed by Jill Van</p>
             </div>
         </div>
-
-        <div class="footerResume">
-            <h6 class="footerh6">Explore my work history</h6>
-            <button id="buttonResume" type="button">Resume</button>
-        </div>
-
-        <p id="footerText"> &copy Copyright 2022 - Designed by Jill Van</p>
-    </section>
     </footer>
+
+
+
 
 </div> <!-- This closes my "content" class div which contains About to Connect sections and footer -->
 

@@ -652,9 +652,6 @@ Trick was to be sure that I am using the ../images to follow the correct file st
     padding-bottom: 8rem;
 }
 
-.designToolsIcons {
-    text-align: right;
-}
 
 #UXskillsImg {
     flex-shrink: 1;
@@ -666,6 +663,7 @@ Trick was to be sure that I am using the ../images to follow the correct file st
 }
 
 .designToolsIcons {
+    text-align: right;
     margin-right: 2rem;
     padding-bottom: 8rem; 
 }
@@ -764,31 +762,27 @@ Trick was to be sure that I am using the ../images to follow the correct file st
 
 
 
-
-/* FOOTER Styles */
-.footer {
-    /* background-color: #7C7DCB; */
+/* FOOTER */
+.container, .card-body {
     background-color: #000000; 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 1rem;
-    grid-template-rows: 1.75fr 0.25fr;
-    grid-template-areas: 
-        "footerh1 connectIcons footerResume"
-        "#footerText #footerText #footerText"
-        ;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
-/* .footerh1 {
-    grid-area: footerh1;
-} */
+.card-body p {
+    padding-bottom: 1rem;
+}
+
+
+
+footer {
+    background-color: #000000;
+    border-top: 1px solid #F1F0F4;
+}
 
 .connectIcons {
     display: flex;
     flex-direction: column;
-    padding-left: 2rem;
+    /* padding-left: 2rem;  */
+    padding-left: 10%;
     /* grid-area: connectIcons; */
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -797,8 +791,8 @@ Trick was to be sure that I am using the ../images to follow the correct file st
 .footerh1 {
     color: #F1F0F4;
     text-align: left;
-    /* line-height: 16px; */
-    padding-top: 2rem;
+    line-height: 6rem;
+    padding-top: 4rem;
     padding-left: 10%;
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -813,6 +807,21 @@ Trick was to be sure that I am using the ../images to follow the correct file st
     font-weight: 600;
     line-height: 28px;
     letter-spacing: -2%;
+    margin-top: 3rem;
+    /* margin-bottom: 1rem;  */
+}
+
+.footerRow {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+}
+
+.copyrightRow {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #F1F0F4;
+    padding-top: 1rem;
 }
 
 #footerText {
@@ -821,7 +830,7 @@ Trick was to be sure that I am using the ../images to follow the correct file st
     font-size: 12px;
     font-weight: normal;
     line-height: 16px;
-/* Why can't I get this p id div to center across the entire width?  */
+    text-align: center;
 }
 
 .emailWithIcon {
@@ -851,22 +860,27 @@ Trick was to be sure that I am using the ../images to follow the correct file st
     padding-left: 2rem;
 }
 
-#buttonResume {
-    margin-left: 3.75rem;
+.footerResume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer button {
-/* I want to center this in the div */
+#buttonResume {
+    width: 50%;
+    text-align: center;
+}
+
+footer button {
     border: 3px solid #ECE5BA;
     border-radius: 4px;
     color: #ECE5BA;
     box-sizing: border-box;
-    /* background-color: #7C7DCB;  */
-    background-color: #000000; 
+    background-color: transparent; 
     margin-top: 1rem;
 }
 
-.footer button:hover {
+footer button:hover {
     background: #F1F0F4;
     color: #7C7DCB;
     border-color: #F1F0F4;
@@ -1167,39 +1181,7 @@ Trick was to be sure that I am using the ../images to follow the correct file st
 
 
     /* FOOTER section */
-    .footer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footerh1 {
-        text-align: center;
-        /* padding-top: 2rem;
-        margin-top: 2rem; */
-    }
-
-    .connectIcons {
-        text-align: center;
-    }
-
-    .footerResume {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-/* How do I center this button?  */
-    .footer button {
-        text-align: center;
-        justify-self: center;
-    }
-
-    #footerText {
-        text-align: center;
-    }
-
+  
 }
 
 
